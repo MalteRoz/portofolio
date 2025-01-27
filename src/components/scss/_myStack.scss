@@ -1,0 +1,31 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+
+
+.my-stack-content {
+    @include m.flex(column, center, flex);
+    padding: 4rem 2rem;
+    gap: 4rem;
+
+    .stack {
+
+        p {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .icons {
+            @include m.flex(row, space-between, center);
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+            img {
+                width: 15%;
+            }
+        }
+
+    }
+
+}

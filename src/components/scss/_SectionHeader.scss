@@ -1,0 +1,19 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+
+.section-header-container {
+    border-top: 1px solid v.$borderColor ;
+    border-bottom: 1px solid v.$borderColor ;
+    padding: 2rem;
+
+    .section-title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .section-subheader {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
