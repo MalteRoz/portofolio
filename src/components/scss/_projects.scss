@@ -1,0 +1,8 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.project-section-container {
+    @include m.flex(column,center,center);
+    padding: 4rem 2rem;
+    gap: 2rem;
+}

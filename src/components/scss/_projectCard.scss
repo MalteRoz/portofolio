@@ -1,0 +1,79 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.project-card {
+    @include m.flex(column,center,center);
+    background-color: #edede9;
+    padding: 1rem;
+
+
+    .project-card-upper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        height: 100%;
+
+        .left {
+            width: 60%;
+            height: 100%;
+
+            .left-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+    
+            .left-text {
+                font-size: 0.875rem;
+            }
+    
+            
+        }
+    
+        .right  {
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .project-card-lower {
+        width: 100%;
+        .stack-container {
+            @include m.flex(row,space-between,center);
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            .stack-name {
+                font-size: 0.875rem;
+                font-weight: 600 ;
+            }
+        }
+
+        button {
+            padding: 0.5rem 2rem;
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+    
+}
+
+@media (max-width: 374px) {
+    .project-card {
+
+        .project-card-upper {
+
+        .left {
+            width: 100%;
+        }
+
+        .right {
+            display: none;
+        }
+
+    }
+    }
+}
