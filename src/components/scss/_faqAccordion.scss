@@ -1,0 +1,64 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+
+.accordion {
+    border: 1.5px solid v.$borderColor;
+    width: 100%;
+    background: none;
+    border-radius: 0.75rem;
+    padding: 1rem;
+
+
+
+    .question {
+        @include m.flex(row, flex-start, center);
+        font-weight: 600;
+        font-size: 1.15rem;
+        gap: 0.5rem;
+
+        .icon {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .icon-active {
+            transform: rotate(45deg);
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+
+
+
+    // .panel {
+    //     padding: 0; 
+    //     height: 0; 
+    //     overflow: hidden;
+    //     transition: all 0.2s ease-out; 
+    // }
+
+    // .panel.open {
+    //     height: auto; 
+    //     padding: 1rem 0 1rem 2rem;
+    // }
+
+
+    .panel {
+        max-height: 0; // Börja med en maxhöjd på 0
+        overflow: hidden; // Dölj innehåll utanför gränsen
+        // transition: max-height 0.4s ease-out; // Använd max-height för att animera höjd
+    
+        .wrapper {
+            padding: 1rem 0 1rem 2rem; // Konstant padding inuti
+            opacity: 0; // Dölj innehåll initialt
+            // transition: opacity 0.2s ease-in-out; // Gör en fade-effekt för innehåll
+        }
+    
+        &.open {
+            max-height: 10000px; // Sätt en tillräcklig maxhöjd för att kunna visa innehållet
+            .wrapper {
+                opacity: 1; // Visa innehåll med fade
+            }
+        }
+    }
+}
+

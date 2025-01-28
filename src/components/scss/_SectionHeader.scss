@@ -8,13 +8,19 @@
     padding: 2rem;
 
     .section-title {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 600;
     }
 
     .section-subheader {
         font-size: 1rem;
         font-weight: 400;
+        color: v.$secondaryTextColor;
+    }
+
+    .section-bigger-subheader {
+        font-size: 1.5rem;
+        font-weight: 600;
         color: v.$secondaryTextColor;
     }
 }

@@ -1,8 +1,9 @@
 import React from "react";
 import NavbarMobile from "./components/NavbarMobile";
 import Hero from "./components/Hero";
-import MyStack from "./components/MyStack";
-import Projects from "./components/Projects";
+import MyStack from "./components/MyStackSection";
+import Projects from "./components/ProjectsSection";
+import FAQ from "./components/FAQSection";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <MyStack />
       <Projects />
+      <FAQ />
     </>
   );
 };

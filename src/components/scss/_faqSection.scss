@@ -1,0 +1,8 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.FAQ-section {
+    @include m.flex(column, center, center);
+    padding: 4rem 2rem;
+    gap: 1rem;
+}
