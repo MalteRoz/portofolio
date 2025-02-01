@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import MyStack from "./components/MyStackSection";
 import Projects from "./components/ProjectsSection";
 import FAQ from "./components/FAQSection";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <MyStack />
       <Projects />
       <FAQ />
+      <Footer />
     </>
   );
 };
