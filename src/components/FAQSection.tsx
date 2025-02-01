@@ -15,11 +15,19 @@ const FAQ = () => {
         />
         <FAQAccordion
           question="What's it like working with me? "
-          answer="A stock app built with the MERN stack, allowing users to browse stocks, news, crypto and more. Features include user authentication, stock search with suggestions, and the ability to save favorite stocks."
+          answer="I'm a team player and like to gather as many perspectives as possible before I dive into a task. I focus on making sure both my own and others' ideas are heard. Communication and transparency are key if a group is going to succeed, and I always strive to create an open and collaborative environment."
         />
         <FAQAccordion
           question="How's my working progress"
-          answer="A stock app built with the MERN stack, allowing users to browse stocks, news, crypto and more. Features include user authentication, stock search with suggestions, and the ability to save favorite stocks."
+          answer="I'm big on planning and setting everything up before diving in to ensure a smooth process throughout the project. Changes will always come up during development, but having a well-structured plan makes it easier to get an initial picture of how the end product should behave and look. I focus on keeping my work structured and minimalistic."
+          // answer2="I start by taking initial notes on the intended functionality. Then, I map out the application's flow to identify potential challenges and find the most efficient way to begin."
+          answer3="My problem-solving method follows five steps:
+                  1. Understanding the problem
+                  2. Writing a step-by-step list in plain English
+                  3. Turning that list into pseudocode
+                  4. Implementing the code
+                  5. Testing the final solution
+                  This method isn't just for coding—it can be applied to many types of problem-solving. Try it yourself! 😊"
         />
         <FAQAccordion
           question="Right now and the future"
@@ -29,7 +37,7 @@ const FAQ = () => {
         />
         <FAQAccordion
           question="What else goes on in my life? "
-          answer="A stock app built with the MERN stack, allowing users to browse stocks, news, crypto and more. Features include user authentication, stock search with suggestions, and the ability to save favorite stocks."
+          answer="I love football and try to spend as much time as possible playing. When I'm not on the field, I'm either working out in other ways or spending time with friends and family, cooking food and enjoying some beer or wine."
         />
       </section>
     </>

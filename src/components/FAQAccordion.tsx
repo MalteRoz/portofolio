@@ -21,8 +21,6 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
     setShowAcccordion(!showAccordion);
   };
 
-  //problemet -> diven som ligger i acordion påverkas när flex körs
-
   return (
     <>
       <div className="accordion" onClick={handleShowAccordion}>
@@ -33,10 +31,18 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
         <div className={`panel ${showAccordion ? "open" : ""}`}>
           <div className="wrapper">
             <p className="answer">{answer}</p>
-            <br />
-            <p className="answer">{answer2}</p>
-            <br />
-            <p className="answer">{answer3}</p>
+            {answer2 && (
+              <div>
+                <br />
+                <p className="answer">{answer2}</p>
+              </div>
+            )}
+            {answer3 && (
+              <div>
+                <br />
+                <p className="answer">{answer3}</p>
+              </div>
+            )}
           </div>
         </div>
       </div>

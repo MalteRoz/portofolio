@@ -27,38 +27,24 @@
         }
     }
 
-
-
-    // .panel {
-    //     padding: 0; 
-    //     height: 0; 
-    //     overflow: hidden;
-    //     transition: all 0.2s ease-out; 
-    // }
-
-    // .panel.open {
-    //     height: auto; 
-    //     padding: 1rem 0 1rem 2rem;
-    // }
-
-
     .panel {
-        max-height: 0; // Börja med en maxhöjd på 0
-        overflow: hidden; // Dölj innehåll utanför gränsen
-        // transition: max-height 0.4s ease-out; // Använd max-height för att animera höjd
+        height: 0; 
+        overflow: hidden; 
+        transition: height 0.5s ease-out;
     
         .wrapper {
-            padding: 1rem 0 1rem 2rem; // Konstant padding inuti
-            opacity: 0; // Dölj innehåll initialt
-            // transition: opacity 0.2s ease-in-out; // Gör en fade-effekt för innehåll
+            padding: 1rem 0 0 2rem; 
+            opacity: 0; 
+            transition: opacity 0.3s ease-out;
         }
     
         &.open {
-            max-height: 10000px; // Sätt en tillräcklig maxhöjd för att kunna visa innehållet
+            height: auto;
             .wrapper {
-                opacity: 1; // Visa innehåll med fade
+                opacity: 1;
             }
         }
     }
+    
 }
 
