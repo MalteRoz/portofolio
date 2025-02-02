@@ -15,65 +15,71 @@ import mongoDbIcon from "../assets/mongoDB.svg";
 import nodeJSIcon from "../assets/nodeJs.svg";
 import expressJsICon from "../assets/expressJs.svg";
 import mySqlIcon from "../assets/mySql.svg";
+import LowerWrapper from "./LowerWrapper";
+import UpperWrapper from "./UpperWrapper";
 
 const MyStack = () => {
   return (
     <>
-      <SectionHeader
-        title="My stack and frameworks"
-        subheader="See what technology I use"
-      />
-      <div className="my-stack-content">
-        {/* Frontend / Design Stack */}
-        <div className="stack">
-          <p>Frontend / Design</p>
-          <div className="icons">
-            <Tooltip title="HTML5">
-              <img src={htmlIcon} alt="HTML icon" />
-            </Tooltip>
-            <Tooltip title="TypeScript">
-              <img src={typeScriptIcon} alt="TypeScript icon" />
-            </Tooltip>
-            <Tooltip title="React">
-              <img src={reactIcon} alt="React icon" />
-            </Tooltip>
-            <Tooltip title="React Native">
-              <img src={reactIcon} alt="React Native icon" />
-            </Tooltip>
-            <Tooltip title="SASS">
-              <img src={sassIcon} alt="SASS icon" />
-            </Tooltip>
-            <Tooltip title="Tailwind CSS">
-              <img src={tailWindIcon} alt="Tailwind CSS icon" />
-            </Tooltip>
-            <Tooltip title="Bootstrap">
-              <img src={bootSrapIcon} alt="Bootstrap icon" />
-            </Tooltip>
-            <Tooltip title="Figma">
-              <img src={figmaIcon} alt="Figma icon" />
-            </Tooltip>
+      <UpperWrapper>
+        <SectionHeader
+          title="My stack and frameworks"
+          subheader="See what technology I use"
+        />
+      </UpperWrapper>
+      <LowerWrapper>
+        <div className="my-stack-content">
+          {/* Frontend / Design Stack */}
+          <div className="stack">
+            <p>Frontend / Design</p>
+            <div className="icons">
+              <Tooltip title="HTML5">
+                <img src={htmlIcon} alt="HTML icon" />
+              </Tooltip>
+              <Tooltip title="TypeScript">
+                <img src={typeScriptIcon} alt="TypeScript icon" />
+              </Tooltip>
+              <Tooltip title="React">
+                <img src={reactIcon} alt="React icon" />
+              </Tooltip>
+              <Tooltip title="React Native">
+                <img src={reactIcon} alt="React Native icon" />
+              </Tooltip>
+              <Tooltip title="SASS">
+                <img src={sassIcon} alt="SASS icon" />
+              </Tooltip>
+              <Tooltip title="Tailwind CSS">
+                <img src={tailWindIcon} alt="Tailwind CSS icon" />
+              </Tooltip>
+              <Tooltip title="Bootstrap">
+                <img src={bootSrapIcon} alt="Bootstrap icon" />
+              </Tooltip>
+              <Tooltip title="Figma">
+                <img src={figmaIcon} alt="Figma icon" />
+              </Tooltip>
+            </div>
           </div>
-        </div>
 
-        {/* Backend / Database Stack */}
-        <div className="stack">
-          <p>Backend / DB</p>
-          <div className="icons">
-            <Tooltip title="MongoDB">
-              <img src={mongoDbIcon} alt="MongoDB icon" />
-            </Tooltip>
-            <Tooltip title="Node.js">
-              <img src={nodeJSIcon} alt="Node.js icon" />
-            </Tooltip>
-            <Tooltip title="Express.js">
-              <img src={expressJsICon} alt="Express.js icon" />
-            </Tooltip>
-            <Tooltip title="MySQL">
-              <img src={mySqlIcon} alt="MySQL icon" />
-            </Tooltip>
+          {/* Backend / Database Stack */}
+          <div className="stack">
+            <p>Backend / DB</p>
+            <div className="icons">
+              <Tooltip title="MongoDB">
+                <img src={mongoDbIcon} alt="MongoDB icon" />
+              </Tooltip>
+              <Tooltip title="Node.js">
+                <img src={nodeJSIcon} alt="Node.js icon" />
+              </Tooltip>
+              <Tooltip title="Express.js">
+                <img src={expressJsICon} alt="Express.js icon" />
+              </Tooltip>
+              <Tooltip title="MySQL">
+                <img src={mySqlIcon} alt="MySQL icon" />
+              </Tooltip>
+            </div>
           </div>
         </div>
-      </div>
+      </LowerWrapper>
     </>
   );
 };

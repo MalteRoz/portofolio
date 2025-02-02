@@ -5,7 +5,7 @@
 
 .my-stack-content {
     @include m.flex(column, center, flex);
-    padding: 4rem 2rem;
+    // padding: 4rem 2rem;
     gap: 4rem;
 
     .stack {

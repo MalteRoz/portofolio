@@ -1,0 +1,19 @@
+
+.wrapper-lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper-lower-content {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 767px) {
+    .wrapper-lower-content {
+        border-left: 1px solid gray;
+        border-right: 1px solid gray; 
+    }
+}

@@ -3,9 +3,6 @@
 
 
 .section-header-container {
-    border-top: 1px solid v.$borderColor ;
-    border-bottom: 1px solid v.$borderColor ;
-    padding: 2rem;
 
     .section-title {
         font-size: 1.5rem;
@@ -24,3 +21,4 @@
         color: v.$secondaryTextColor;
     }
 }
+
