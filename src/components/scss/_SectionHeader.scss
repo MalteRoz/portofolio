@@ -22,3 +22,25 @@
     }
 }
 
+
+@media (min-width: 767px) {
+    .section-header-container {
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    
+        .section-subheader {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: v.$secondaryTextColor;
+        }
+    
+        .section-bigger-subheader {
+            font-size: 2rem;
+            font-weight: 700;
+            color: v.$secondaryTextColor;
+        }
+    } 
+}

@@ -2,11 +2,9 @@
 @use "../../styles/variables" as v;
 
 header { 
-    border-bottom: 1px solid v.$borderColor ;
     nav {
         @include m.flex(row,space-between, center);
         width: 100%;
-        padding: 2rem;
         position: relative;
         .nav-text-container {
             .name {

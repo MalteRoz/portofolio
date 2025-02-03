@@ -12,8 +12,13 @@
 }
 
 @media (min-width: 767px) {
+
+    .wrapper-lower {
     .wrapper-lower-content {
         border-left: 1px solid gray;
         border-right: 1px solid gray; 
+        padding: 4rem 4rem;
+        
     }
+}
 }

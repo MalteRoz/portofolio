@@ -15,7 +15,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   return (
     <div className="section-header-container">
       <p className="section-title">{title}</p>
-      <p className="section-subheading">{subheader}</p>
+      <p className="section-subheader">{subheader}</p>
       <p className="section-bigger-subheader">{biggerSubheader}</p>
     </div>
   );

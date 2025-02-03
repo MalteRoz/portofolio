@@ -2,7 +2,6 @@
 @use "../../styles/variables" as v;
 
 .hero-container {
-    padding: 2rem;
 
     .upper {
         .img {
@@ -28,14 +27,61 @@
             }
         }
         
+    }
 
-        .contact-icons {
-            @include m.flex(row,flex-start,center);
-            img {
-                margin: 2rem  2rem 1rem 0;
-                width: 12.5%;
+    .contact-icons {
+        @include m.flex(row,flex-start,center);
+        img {
+            margin: 2rem  2rem 1rem 0;
+            width: 12.5%;
+        }
+    }
+}
+
+
+@media (min-width: 767px ) {
+    .hero-container {
+        display: grid;
+        grid-template-areas: 
+        "a b"
+        "c c";
+
+        .upper {
+            grid-area: b;
+            
+
+            .img {
+                height: 25rem;
+                width: 25rem;
+            }
+
+        }
+
+        .lower {
+            grid-area: a;
+
+            .hero-text-container {
+                @include m.flex(column,center,flex-start);
+                gap: 2rem;
+                .title {
+                    width: 70%;
+                    font-size: 3.5rem;
+                    padding: 0;
+                }
+                
+                .text {
+                    width: 75%;
+                    font-size: 2rem;
+                    color: v.$secondaryTextColor;
+                }
             }
         }
-       
+
+        .contact-icons {
+            img {
+                width: 7.5%;
+            }
+        }
+
     }
 }

@@ -13,8 +13,14 @@
 }
 
 @media (min-width: 767px) {
-    .wrapper-upper-content {
-        border-left: 1px solid gray;
-        border-right: 1px solid gray; 
+
+    .wrapper-upper {
+
+        .wrapper-upper-content {
+            padding: 4rem;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+
     }
 }

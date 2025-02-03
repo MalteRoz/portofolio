@@ -5,7 +5,6 @@
 
 .my-stack-content {
     @include m.flex(column, center, flex);
-    // padding: 4rem 2rem;
     gap: 4rem;
 
     .stack {
@@ -28,4 +27,19 @@
 
     }
 
+}
+
+@media (min-width: 767px) {
+    .my-stack-content {
+    
+        .stack {
+            .icons {
+                @include m.flex(row, flex-start, center);
+                gap: 2rem;
+                img {
+                    width: 5%;
+                }
+            }            
+        }
+    }
 }

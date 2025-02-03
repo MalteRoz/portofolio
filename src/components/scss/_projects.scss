@@ -3,6 +3,12 @@
 
 .project-section-container {
     @include m.flex(column,center,center);
-    padding: 4rem 2rem;
-    gap: 2rem;
+    gap: 4rem;
+}
+
+@media (min-width: 767px) {
+    .project-section-container {
+        @include m.flex(row,center,center);
+        flex-wrap: wrap;
+    }
 }
