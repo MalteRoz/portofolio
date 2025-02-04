@@ -1,0 +1,33 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+header { 
+    nav {
+        @include m.flex(row,space-between, center);
+        width: 100%;
+        position: relative;
+        .nav-text-container-desktop {
+            .name-desktop {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            .job-title-desktop {
+                color: v.$secondaryTextColor;
+                font-size: 1.125rem;
+            }
+        }
+
+        .nav-options-desktop {
+            @include m.flex(row,center, center);
+            list-style: none;
+            gap: 2rem;
+
+            li {
+                font-size: 1.125rem;
+                font-weight: 600;
+            }
+        }
+    
+    }
+}

@@ -42,6 +42,7 @@ header {
         @include m.flex(column, center, center);
         li {
             font-size: 1.25rem;
+            font-weight: 600;
             padding: 1rem;
             list-style: none;
         }

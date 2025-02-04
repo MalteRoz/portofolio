@@ -3,6 +3,8 @@
 
 
 .section-header-container {
+    width: 50%;
+    border-right: 1px solid v.$borderColor;
 
     .section-title {
         font-size: 1.5rem;
@@ -25,6 +27,7 @@
 
 @media (min-width: 767px) {
     .section-header-container {
+        // text-align: center;
 
         .section-title {
             font-size: 2rem;

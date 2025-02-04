@@ -42,7 +42,7 @@ const FAQ = () => {
           />
           <FAQAccordion
             question="What else goes on in my life? "
-            answer="I love football and try to spend as much time as possible playing. When I'm not on the field, I'm either working out in other ways or spending time with friends and family, cooking food and enjoying some beer or wine."
+            answer="I love football and try to spend as much time as possible playing. When I'm not on the field, I'm either working out in other ways or spending time with friends and family, cooking food and enjoying some good beer or wine."
           />
         </section>
       </LowerWrapper>

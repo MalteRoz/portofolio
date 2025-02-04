@@ -30,7 +30,7 @@ const NavbarMobile = () => {
           <div className="nav-options">
             <li>Projects</li>
             <li>FAQ</li>
-            <li>Contact</li>
+            <li>Contact Me👋</li>
           </div>
         </div>
       </UpperWrapper>

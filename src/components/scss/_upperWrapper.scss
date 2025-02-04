@@ -1,9 +1,12 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
 .wrapper-upper {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid v.$borderColor;
+    border-bottom: 1px solid v.$borderColor;
 
     .wrapper-upper-content {
         padding: 2rem;
@@ -18,8 +21,8 @@
 
         .wrapper-upper-content {
             padding: 4rem;
-            border-left: 1px solid gray;
-            border-right: 1px solid gray;
+            border-left: 1px solid v.$borderColor;
+            border-right: 1px solid v.$borderColor;
         }
 
     }

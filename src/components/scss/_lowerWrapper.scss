@@ -1,3 +1,6 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
 
 .wrapper-lower {
     display: flex;
@@ -15,8 +18,8 @@
 
     .wrapper-lower {
     .wrapper-lower-content {
-        border-left: 1px solid gray;
-        border-right: 1px solid gray; 
+        border-left: 1px solid v.$borderColor;
+        border-right: 1px solid v.$borderColor; 
         padding: 4rem 4rem;
         
     }
