@@ -11,16 +11,16 @@ import UpperWrapper from "./UpperWrapper";
 import LowerWrapper from "./LowerWrapper";
 
 const foodScannerStack: any = [
-  "React native",
-  "expressJs",
-  "nodeJs",
+  "React Native",
+  "Express.js",
+  "Node.js",
   "MongoDB",
 ];
 
-const sundStack: any = ["React", "SCSS", "TypeScript"];
+const sundStack: any = ["React", "SCSS", "HTML5", "TypeScript"];
 
-const sillyStockStack: any = ["React", "expressJs", "nodeJs", "MongoDB"];
-const facendiaStack: any = ["React", "expressJs", "nodeJs", "MongoDB"];
+const sillyStockStack: any = ["React", "Express.js", "Node.js", "MongoDB"];
+const facendiaStack: any = ["React", "Express.js", "Node.js", "MongoDB"];
 
 const Projects = () => {
   return (

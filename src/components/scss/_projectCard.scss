@@ -2,7 +2,7 @@
 @use "../../styles/variables" as v;
 
 .project-card {
-    @include m.flex(column,center,center);
+    @include m.flex(column, center, center);
     background-color: #edede9;
     padding: 1rem;
 
@@ -23,16 +23,20 @@
                 font-weight: 700;
                 margin-bottom: 1rem;
             }
-    
+
             .left-text {
                 font-size: 0.875rem;
             }
-    
-            
+
+            .left-hidden-popup {
+                display: none;
+            }
+
         }
-    
-        .right  {
+
+        .right {
             width: 40%;
+
             img {
                 width: 100%;
             }
@@ -41,14 +45,16 @@
 
     .project-card-lower {
         width: 100%;
+
         .stack-container {
-            @include m.flex(row,space-between,center);
+            @include m.flex(row, space-between, center);
             flex-wrap: wrap;
             gap: 0.5rem;
             margin-top: 1rem;
+
             .stack-name {
                 font-size: 0.875rem;
-                font-weight: 600 ;
+                font-weight: 600;
             }
         }
 
@@ -58,7 +64,7 @@
             width: 100%;
         }
     }
-    
+
 }
 
 @media (max-width: 374px) {
@@ -66,23 +72,76 @@
 
         .project-card-upper {
 
-        .left {
-            width: 100%;
-        }
+            .left {
+                width: 100%;
+            }
 
-        .right {
-            display: none;
-        }
+            .right {
+                display: none;
+            }
 
-    }
+        }
     }
 }
+
 
 @media (min-width: 767px) {
     .project-card {
-        height: 32.5rem;
-        width: 45%;
 
-        
+        .project-card-upper {
+        .left {
+            .left-title {
+                font-size: 1.5rem;
+            }
+
+            .left-text {
+                font-size: 1.25rem;
+            }
+        }
+
+        }
+    }
+
+}
+
+@media (min-width: 1023px) {
+    .project-card {
+        height: 26rem;
+        width: 45%;
+        transition: transform .3s; /* Animation */
+        cursor: pointer;
+
+        .project-card-upper {
+            .left {
+                display: grid;
+                .left-title {
+                    font-size: 1.5rem;
+                }
+
+                .left-text {
+                    font-size: 1rem;
+                }
+
+                .left-hidden-popup {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                }
+            }
+        }
+
+        .project-card-lower {
+            button {
+                display: none;
+            }
+        }
+    }
+
+    .project-card:hover {
+        transform: scale(1.03);
+
     }
 }
+
+

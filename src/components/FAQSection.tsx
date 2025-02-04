@@ -15,8 +15,8 @@ const FAQ = () => {
         <section className="FAQ-section">
           <FAQAccordion
             question="How did i find tech?"
-            answer="Like a lot of young kids, I enjoyed playing video games with my friends. It all started on a PS3, but soon it turned into a PC. With the PC, I became interested in tweaking parts and improving performance. This passion led to an internship at Betspawn during my time in middle school. Betspawn was one of the first websites focused on e-sports betting, and I got in contact with a lot of tech and, of course, coding. That was the first time I saw code, and I found it really interesting, but unfortunately, I didn’t pursue further knowledge after the internship."
-            answer2="Soon enough, I grew away from playing video games and entered high school. It wasn't until the last year of high school that I became interested in app development and decided to take some minor JavaScript courses on Codecademy. I stuck with it for a few months, but then I stopped for some reason. The second year after high school, I rediscovered coding. Me and some friends started brainstorming ideas for cool startups, but I wanted more. I started to take learning more seriously, and now I’m pursuing a Full Stack Web Developer diploma at Medieinstitutet, and there is more to come."
+            answer="My passion for technology started with gaming on PS3 and later on PC, where I became interested in optimizing performance. This led to an internship at Betspawn during middle school, where I had my first encounter with coding."
+            answer2="After stepping away from gaming and coding for a while, I rediscovered my interest in my last year of high school through JavaScript courses on Codecademy. A few years later, I decided to take learning seriously, and now I’m pursuing a Full Stack Web Developer diploma at Medieinstitutet—with much more to come."
           />
           <FAQAccordion
             question="What's it like working with me? "

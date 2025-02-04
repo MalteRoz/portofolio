@@ -38,8 +38,7 @@
     }
 }
 
-
-@media (min-width: 767px ) {
+@media (min-width: 500px ) {
     .hero-container {
         display: grid;
         grid-template-areas: 
@@ -48,13 +47,11 @@
 
         .upper {
             grid-area: b;
-            
 
             .img {
-                height: 25rem;
-                width: 25rem;
+                height: 15rem;
+                width: 15rem;
             }
-
         }
 
         .lower {
@@ -62,7 +59,73 @@
 
             .hero-text-container {
                 @include m.flex(column,center,flex-start);
+
+                .title {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1023px) {
+    .hero-container {
+        .upper {
+            width: 50%;
+
+            .img {
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+
+        .lower {
+            width: 70%;
+
+            .hero-text-container {
+                @include m.flex(column,center,flex-start);
+                gap: 1rem;
+                width: 100%;
+
+                .title {
+                    font-size: 3rem;
+                }
+
+                .text {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .contact-icons {
+            img {
+                width: 10%;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1440px ) {
+    .hero-container {
+        
+
+        .upper {
+            
+
+            .img {
+                height: 26.5rem;
+                width: 26.5rem;
+            }
+
+        }
+
+        .lower {
+            width: 100%;
+            .hero-text-container {
+                @include m.flex(column,center,flex-start);
                 gap: 2rem;
+                width: 100%;
                 .title {
                     width: 70%;
                     font-size: 3.5rem;

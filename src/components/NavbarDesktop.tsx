@@ -10,9 +10,7 @@ const NavbarDesktop = () => {
           <nav>
             <div className="nav-text-container-desktop">
               <p className="name-desktop">Malte Rozenbeek</p>
-              <p className="job-title-desktop">
-                Fullstack webb & app developer
-              </p>
+              <p className="job-title-desktop">Fullstack web & app developer</p>
             </div>
             <div className="nav-options-desktop">
               <li>Projects</li>
