@@ -9,10 +9,12 @@ import "./scss/_home.scss";
 const Home = () => {
   return (
     <>
-      <Hero />
-      <MyStack />
-      <Projects />
-      <FAQ />
+      <div className="balle">
+        <Hero />
+        <MyStack />
+        <Projects />
+        <FAQ />
+      </div>
     </>
   );
 };

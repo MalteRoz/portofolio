@@ -22,13 +22,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <p className="left-title">{title}</p>
             <p className="left-text">{desc}</p>
           </div>
-          {/* <div className="left-hidden-popup">
-            <p className="left-hidden-popup-text">Click to find out more!</p>
-          </div> */}
         </div>
-        <div className="right">
+        {/* <div className="right">
           <img src={img} alt="" />
-        </div>
+        </div> */}
       </div>
       <div className="project-card-lower">
         <div className="stack-container">

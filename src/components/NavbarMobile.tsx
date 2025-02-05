@@ -8,6 +8,12 @@ const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
+    if (isOpen === false) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
     setIsOpen(!isOpen);
   };
 
