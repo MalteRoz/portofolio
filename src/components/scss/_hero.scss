@@ -2,7 +2,7 @@
 @use "../../styles/variables" as v;
 
 .hero-container {
-
+    // height: 100vh;
     .upper {
         .img {
             width: 100%;
@@ -135,7 +135,7 @@
                 
                 .text {
                     width: 75%;
-                    font-size: 2rem;
+                    font-size: 1.75rem;
                     color: v.$secondaryTextColor;
                 }
             }

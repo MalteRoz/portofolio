@@ -3,7 +3,7 @@
 
 .project-card {
     @include m.flex(column, center, center);
-    background-color: #edede9;
+    border: 1px solid v.$borderColor;
     padding: 1rem;
 
 
@@ -15,7 +15,7 @@
         height: 100%;
 
         .left {
-            width: 60%;
+            // width: 60%;
             height: 100%;
 
             .left-title {
@@ -67,22 +67,6 @@
 
 }
 
-@media (max-width: 374px) {
-    .project-card {
-
-        .project-card-upper {
-
-            .left {
-                width: 100%;
-            }
-
-            .right {
-                display: none;
-            }
-
-        }
-    }
-}
 
 
 @media (min-width: 767px) {
@@ -106,14 +90,13 @@
 
 @media (min-width: 1023px) {
     .project-card {
-        height: 26rem;
-        width: 45%;
-        transition: transform .3s; /* Animation */
+        width: 46%;
+        transition: transform .3s; 
         cursor: pointer;
+        padding: 2rem;
 
         .project-card-upper {
             .left {
-                display: grid;
                 .left-title {
                     font-size: 1.5rem;
                 }
@@ -131,11 +114,11 @@
             }
         }
 
-        .project-card-lower {
-            button {
-                display: none;
-            }
-        }
+        // .project-card-lower {
+        //     button {
+        //         display: none;
+        //     }
+        // }
     }
 
     .project-card:hover {
