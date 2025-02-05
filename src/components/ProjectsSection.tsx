@@ -45,6 +45,7 @@ const Projects = () => {
             img={sundImg}
             stack={sundStack}
           />
+
           <ProjectCard
             title="Silly Stocks"
             desc="A stock app built with the MERN stack, allowing users to browse stocks, news, crypto and more. Features include user authentication, stock search with suggestions, and the ability to save favorite stocks."
