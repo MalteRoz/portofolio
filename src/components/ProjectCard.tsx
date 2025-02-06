@@ -8,12 +8,7 @@ interface ProjectCardProps {
   img: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
-  title,
-  desc,
-  img,
-  stack,
-}) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, desc, stack }) => {
   return (
     <div className="project-card">
       <div className="project-card-upper">
@@ -23,9 +18,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <p className="left-text">{desc}</p>
           </div>
         </div>
-        {/* <div className="right">
-          <img src={img} alt="" />
-        </div> */}
       </div>
       <div className="project-card-lower">
         <div className="stack-container">

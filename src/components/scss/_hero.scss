@@ -2,7 +2,6 @@
 @use "../../styles/variables" as v;
 
 .hero-container {
-    // height: 100vh;
     .upper {
         .img {
             width: 100%;
@@ -70,7 +69,6 @@
 
 @media (min-width: 1023px) {
     .hero-container {
-        height: 100vh;
         .upper {
             width: 50%;
 
@@ -100,7 +98,7 @@
 
         .contact-icons {
             img {
-                width: 10%;
+                width: 7.5%;
             }
         }
     }
