@@ -5,8 +5,9 @@ export interface IProject {
   stack: string[];
   img?: string;
   year: string;
+  links: string[];
   background: string;
-  challenges: string[];
+  challenges: { header: string; text: string }[];
   solutions: { header: string; text: string }[];
   keyFunctionality: string[];
   conclusion: string;

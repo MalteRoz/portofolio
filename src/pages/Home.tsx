@@ -9,7 +9,7 @@ import "./scss/_home.scss";
 const Home = () => {
   return (
     <>
-      <div className="balle">
+      <div className="cooled">
         <Hero />
         <MyStack />
         <Projects />

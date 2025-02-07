@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import "./scss/_faqAccordion.scss";
 import { IoAdd } from "react-icons/io5";
 
 interface FAQAccordionProps {
   question: string;
-  answer: string;
+  answer?: string;
   answer2?: string;
   answer3?: string;
+  children?: ReactNode;
 }
 
 const FAQAccordion: React.FC<FAQAccordionProps> = ({
@@ -14,6 +15,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
   answer,
   answer2,
   answer3,
+  children,
 }) => {
   const [showAccordion, setShowAcccordion] = useState(false);
 
@@ -31,6 +33,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
         <div className={`panel ${showAccordion ? "open" : ""}`}>
           <div className="wrapper">
             <p className="answer">{answer}</p>
+            {children}
             {answer2 && (
               <div>
                 <br />

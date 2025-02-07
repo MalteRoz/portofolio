@@ -1,0 +1,124 @@
+import React, { useEffect, useState } from "react";
+import { IProject } from "../models/IProject";
+import { ProjectData } from "../data/projetsData";
+import { Link, useParams } from "react-router-dom";
+import { HiOutlineChevronLeft } from "react-icons/hi";
+import LowerWrapper from "../components/LowerWrapper";
+import "./scss/_projectDetails.scss";
+import FAQAccordion from "../components/FAQAccordion";
+
+const ProjectDetails = () => {
+  const [projectData, setProjectData] = useState<IProject>();
+  const { title } = useParams();
+  const data: IProject[] = ProjectData;
+
+  useEffect(() => {
+    const sortData = () => {
+      const coolEd = data.find((d) => d.title === title);
+      setProjectData(coolEd);
+    };
+
+    sortData();
+  });
+
+  return (
+    <>
+      <LowerWrapper>
+        <Link to={"/"} className="goback-container link-style">
+          <HiOutlineChevronLeft size={20} />
+          <p>go back</p>
+        </Link>
+        <div className="project-page-container">
+          <div className="project-page-upper">
+            <div className="title-desc-container">
+              <p className="project-page-title">{projectData?.title}</p>
+              <p>{projectData?.desc}</p>
+            </div>
+
+            <div className="project-page-year-functionallity-container">
+              <div className="year-links-container">
+                <div className="year">
+                  <p>Year:</p>
+                  <p>{projectData?.year}</p>
+                </div>
+                <div className="line"></div>
+                <div className="web-links">
+                  <p>Links:</p>
+                  <p>{projectData?.links}</p>
+                </div>
+              </div>
+
+              <div className="project-page-key-functionallity">
+                <p className="project-page-sub-title">Key Functionallity</p>
+                {projectData?.keyFunctionality.map((k, index) => {
+                  return (
+                    <li key={index}>
+                      <span>{k}</span>
+                    </li>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="project-page-stack">
+              {projectData?.stack.map((s) => {
+                return (
+                  <div className="stack-container">
+                    <p>{s}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <FAQAccordion
+            question="Background"
+            answer={projectData?.background || ""}
+          />
+
+          <FAQAccordion question="Challenges">
+            <div className="project-page-challenges">
+              {projectData?.challenges.map((c, index) => {
+                return (
+                  <div>
+                    <li key={index}>
+                      <span>{c.header}</span>
+                      {c.text}
+                    </li>
+                  </div>
+                );
+              })}
+            </div>
+          </FAQAccordion>
+
+          <FAQAccordion question="Solutions">
+            <div className="project-page-solution">
+              {projectData?.solutions.map((s, index) => {
+                return (
+                  <div>
+                    <p className="project-page-solution-header">{s.header}</p>
+                    <p>{s.text}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </FAQAccordion>
+
+          <FAQAccordion
+            question="Conclusion"
+            answer="We learned alot during this project, what to do and what to look out for. Since this was our first “fullstack” project we where more than satisfied. There is alot to improve and functionallity to be fixed before calling this a finished product.
+But it layed a good foreground for our knowledge and made me want to improve my knowledge more.  "
+          />
+        </div>
+      </LowerWrapper>
+    </>
+  );
+};
+
+export default ProjectDetails;
+
+//Flöde
+
+//lägga in projectCardV2 i projectSection
+//link för att lägga till länk till projectDetails, skicka med id som useParam
+//i projectDetails useParams på id för att ta fram rätt project för att skriva ut på sidan

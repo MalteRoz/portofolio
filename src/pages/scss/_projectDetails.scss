@@ -1,0 +1,163 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.goback-container {
+  @include m.flex(row, flex-start, center);
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+
+  p {
+    font-weight: 600;
+  }
+}
+
+.project-page-container {
+  @include m.flex(column, center, flex-start);
+  gap: 2rem;
+
+  .project-page-upper {
+    @include m.flex(column, center, flex-start);
+    gap: 2rem;
+
+    .title-desc-container {
+      @include m.flex(column, center, flex-start);
+      border: 1px solid v.$borderColor;
+      padding: 2rem;
+        gap: 1rem;
+
+      .project-page-title {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+    }
+
+    .project-page-year-functionallity-container {
+      @include m.flex(column, center, flex-start);
+      border: 1px solid v.$borderColor;
+      gap: 2rem;
+      padding: 2rem;
+      width: 100%;
+
+      .year-links-container {
+        @include m.flex(column, center, flex-start);
+        width: 100%;
+
+        .year {
+          @include m.flex(row, flex-start, center);
+          gap: 3.5rem;
+        }
+
+        .line {
+          height: 1px;
+          width: 100%;
+          background-color: v.$borderColor;
+          margin: 16px 0;
+        }
+
+        .web-links {
+          @include m.flex(column, center, flex-start);
+          gap: 1rem;
+        }
+      }
+
+      .project-page-key-functionallity {
+        @include m.flex(column, center, flex-start);
+        gap: 0.5rem;
+        li {
+          list-style: decimal;
+
+          span {
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+
+    .project-page-stack {
+        @include m.flex(row, space-between, center);
+        width: 100%;
+        flex-wrap: wrap;
+        border: 1px solid v.$borderColor;
+        gap: 3rem;
+        padding: 2rem;
+        div {
+            p {
+                font-size: 1.125rem;
+                font-weight: 600;
+            }
+        }
+    }
+  }
+
+  .project-page-bakground {
+    @include m.flex(column, center, flex-start);
+    border: 1px solid v.$borderColor;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .project-page-challenges {
+    @include m.flex(column, center, flex-start);
+    gap: 2rem;
+    list-style: decimal;
+
+    li {
+      span {
+        font-weight: bold;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+
+  .project-page-solution {
+    @include m.flex(column, center, flex-start);
+    gap: 2rem;
+
+    // :first-child {
+    //     margin-top: 2rem;
+    // }
+
+    .project-page-solution-header {
+      font-weight: 500;
+      font-size: 1.125rem;
+    }
+
+    p {
+      font-weight: 300;
+    }
+  }
+
+  .project-page-sub-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 767px ) {
+
+    .project-page-container {
+        .project-page-upper {
+            height: 22.5rem;
+            display: grid;
+            grid-template-areas: 
+            "a b"
+            "c b";
+            
+            .title-desc-container {
+                grid-area: a;
+                align-self: stretch;
+            }
+    
+            .project-page-year-functionallity-container {
+                grid-area: b;
+                align-self: stretch;
+            }
+
+            .project-page-stack {
+                grid-area: c;
+                align-self: stretch;
+            }
+        }
+    }
+    
+}

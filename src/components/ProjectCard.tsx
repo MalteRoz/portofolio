@@ -1,6 +1,6 @@
 import React from "react";
 import "./scss/_projectCard.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -9,7 +9,8 @@ interface ProjectCardProps {
   img: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, desc, stack }) => {
+const ProjectCard = ({ title, desc, stack }: ProjectCardProps) => {
+  const navigate = useNavigate();
   return (
     <div className="project-card">
       <div className="project-card-upper">
@@ -26,7 +27,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, desc, stack }) => {
             <p className="stack-name">{s}</p>
           ))}
         </div>
-        <button>Read more</button>
+        <button onClick={() => navigate("/project/sillystock")}>
+          Read more
+        </button>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import sillyStockImg from "../assets/imgs/silly stocks.png";
 import facendiaImg from "../assets/imgs/facendia.png";
 import UpperWrapper from "./UpperWrapper";
 import LowerWrapper from "./LowerWrapper";
+import ProjectCardV2 from "./ProjectCardV2";
 
 const foodScannerStack: any = [
   "React Native",
@@ -33,7 +34,7 @@ const Projects = () => {
       </UpperWrapper>
       <LowerWrapper>
         <div className="project-section-container">
-          <ProjectCard
+          {/* <ProjectCard
             title="FridgeScanner"
             desc="A machine learning app built in React Native where users can scan their fridge and get healthy recipe suggestions based on the ingredients they have at home."
             img={foodScannerImg}
@@ -57,7 +58,8 @@ const Projects = () => {
             desc="A task manager built with the MERN stack, designed to help users track daily tasks and  analyze their productivity and behaviors."
             img={facendiaImg}
             stack={facendiaStack}
-          />
+          /> */}
+          <ProjectCardV2 />
         </div>
       </LowerWrapper>
     </>
