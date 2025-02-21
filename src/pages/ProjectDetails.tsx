@@ -44,7 +44,9 @@ const ProjectDetails = () => {
                 <div className="line"></div>
                 <div className="web-links">
                   <p>Links:</p>
-                  <p>{projectData?.links}</p>
+                  <a href={projectData?.links?.[0]}>
+                    {projectData?.links?.[0]}
+                  </a>
                 </div>
               </div>
 
@@ -104,11 +106,9 @@ const ProjectDetails = () => {
             </div>
           </FAQAccordion>
 
-          <FAQAccordion
-            question="Conclusion"
-            answer="We learned alot during this project, what to do and what to look out for. Since this was our first “fullstack” project we where more than satisfied. There is alot to improve and functionallity to be fixed before calling this a finished product.
-But it layed a good foreground for our knowledge and made me want to improve my knowledge more.  "
-          />
+          <FAQAccordion question="Conclusion">
+            <div>{projectData?.conclusion}</div>
+          </FAQAccordion>
         </div>
       </LowerWrapper>
     </>
