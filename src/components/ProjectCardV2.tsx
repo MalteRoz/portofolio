@@ -2,36 +2,39 @@ import React from "react";
 import { IProject } from "../models/IProject";
 import { ProjectData } from "../data/projetsData";
 import { Link } from "react-router-dom";
+import "./scss/_projectCard.scss";
 
 const ProjectCardV2 = () => {
   const data: IProject[] = ProjectData;
 
   return (
     <>
-      {data.map((d) => {
-        return (
-          <div className="project-card" key={d.id}>
-            <div className="project-card-upper">
-              <div className="project-card-text-container">
-                <div>
-                  <p className="project-card-title">{d.title}</p>
-                  <p className="project-card-text">{d.desc}</p>
+      <div className="test">
+        {data.map((d) => {
+          return (
+            <div className="project-card" key={d.id}>
+              <div className="project-card-upper">
+                <p className="project-card-title">{d.title}</p>
+                <p className="project-card-text">{d.desc}</p>
+              </div>
+              <div className="project-card-lower">
+                <div className="stack-container">
+                  {d.stackIcons.map((s, i) => {
+                    return <img src={s} key={i} />;
+                    // <p key={i}>{s}</p>;
+                  })}
                 </div>
+                <Link
+                  to={"/project/" + d.title}
+                  className="link-style see-more"
+                >
+                  See more
+                </Link>
               </div>
             </div>
-            <div className="project-card-lower">
-              {d.stack.map((s) => {
-                return (
-                  <div className="stack-container">
-                    <p>{s}</p>
-                  </div>
-                );
-              })}
-              <Link to={"/project/" + d.title}>See more</Link>
-            </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </>
   );
 };

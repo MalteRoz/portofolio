@@ -1,4 +1,8 @@
 import { IProject } from "../models/IProject";
+import reactIcon from "../assets/react.svg";
+import mongoDbIcon from "../assets/mongoDB.svg";
+import nodeJSIcon from "../assets/nodeJs.svg";
+import expressJsICon from "../assets/expressJs.svg";
 
 export const ProjectData: IProject[] = [
   {
@@ -6,6 +10,12 @@ export const ProjectData: IProject[] = [
     title: "Food Scanner",
     desc: "A machine learning app built in React Native where users can scan their fridge and get healthy recipe suggestions based on the ingredients they have at home.",
     stack: ["React Native", "Express.js", "Node.js", "MongoDB"],
+    stackIcons: [
+      `${reactIcon}`,
+      `${mongoDbIcon}`,
+      `${nodeJSIcon}`,
+      `${expressJsICon}`,
+    ],
     year: "August 2024",
     links: ["https://github.com/ChristofferNo/foodScanner2.0"],
     background:
@@ -47,6 +57,7 @@ export const ProjectData: IProject[] = [
     title: "Sund Nergården",
     desc: "A luxurious getaway featuring a hotel and restaurant. The site showcase the hotel's offerings, including its food and drink menus, luxurious rooms, and unique glamping options. Third party booking system integrated.",
     stack: ["React", "SCSS", "TS", "HTML"],
+    stackIcons: [],
     year: "August 2024",
     links: ["https://demosundnergarden.netlify.app/"],
     background:
@@ -84,6 +95,7 @@ export const ProjectData: IProject[] = [
     title: "Silly Stocks",
     desc: "A stock app built with the MERN stack, allowing users to browse stocks, news, crypto and more. Features include user authentication, stock search with suggestions, and the ability to save favorite stocks.",
     stack: ["React", "Express.js", "Node.js", "MongoDB"],
+    stackIcons: [],
     year: "November 2024",
     links: ["https://sillystocks.netlify.app"],
     background:
@@ -130,6 +142,7 @@ export const ProjectData: IProject[] = [
     title: "Facendia",
     desc: "A task manager built with the MERN stack, designed to help users track daily tasks and  analyze their productivity and behaviors.",
     stack: ["React", "Express.js", "Node.js", "MongoDB"],
+    stackIcons: [],
     year: "January 2025 - Under development",
     links: ["https://github.com/MalteRoz/Facendia"],
     background:

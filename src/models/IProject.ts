@@ -3,6 +3,7 @@ export interface IProject {
   title: string;
   desc: string;
   stack: string[];
+  stackIcons: string[];
   img?: string;
   year: string;
   links: string[];
