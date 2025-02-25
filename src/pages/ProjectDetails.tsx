@@ -63,10 +63,11 @@ const ProjectDetails = () => {
             </div>
 
             <div className="project-page-stack">
-              {projectData?.stack.map((s) => {
+              {projectData?.stackIcons.map((s) => {
                 return (
                   <div className="stack-container">
-                    <p>{s}</p>
+                    {/* <p>{s}</p> */}
+                    <img src={s} alt="" />
                   </div>
                 );
               })}

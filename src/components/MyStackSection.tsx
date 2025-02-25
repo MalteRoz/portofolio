@@ -15,6 +15,7 @@ import mongoDbIcon from "../assets/mongoDB.svg";
 import nodeJSIcon from "../assets/nodeJs.svg";
 import expressJsICon from "../assets/expressJs.svg";
 import mySqlIcon from "../assets/mySql.svg";
+
 import LowerWrapper from "./LowerWrapper";
 import UpperWrapper from "./UpperWrapper";
 

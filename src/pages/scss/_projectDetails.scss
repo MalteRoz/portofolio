@@ -80,10 +80,15 @@
         border: 1px solid v.$borderColor;
         gap: 3rem;
         padding: 2rem;
-        div {
+        div { 
+          @include m.flex(row, center center);
             p {
                 font-size: 1.125rem;
                 font-weight: 600;
+            }
+
+            img {
+              width: 2rem;
             }
         }
     }
@@ -156,6 +161,14 @@
             .project-page-stack {
                 grid-area: c;
                 align-self: stretch;
+
+                div {
+                  img {
+                    
+                      width: 3rem;
+                    
+                  }
+                }
             }
         }
     }

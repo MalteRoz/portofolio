@@ -4,6 +4,10 @@ import mongoDbIcon from "../assets/mongoDB.svg";
 import nodeJSIcon from "../assets/nodeJs.svg";
 import expressJsICon from "../assets/expressJs.svg";
 
+import htmlIcon from "../assets/html.svg";
+import typeScriptIcon from "../assets/Vector.svg";
+import sassIcon from "../assets/sass-svgrepo-com.svg";
+
 export const ProjectData: IProject[] = [
   {
     id: 1,
@@ -57,7 +61,12 @@ export const ProjectData: IProject[] = [
     title: "Sund Nergården",
     desc: "A luxurious getaway featuring a hotel and restaurant. The site showcase the hotel's offerings, including its food and drink menus, luxurious rooms, and unique glamping options. Third party booking system integrated.",
     stack: ["React", "SCSS", "TS", "HTML"],
-    stackIcons: [],
+    stackIcons: [
+      `${reactIcon}`,
+      `${typeScriptIcon}`,
+      `${htmlIcon}`,
+      `${sassIcon}`,
+    ],
     year: "August 2024",
     links: ["https://demosundnergarden.netlify.app/"],
     background:
@@ -95,7 +104,12 @@ export const ProjectData: IProject[] = [
     title: "Silly Stocks",
     desc: "A stock app built with the MERN stack, allowing users to browse stocks, news, crypto and more. Features include user authentication, stock search with suggestions, and the ability to save favorite stocks.",
     stack: ["React", "Express.js", "Node.js", "MongoDB"],
-    stackIcons: [],
+    stackIcons: [
+      `${reactIcon}`,
+      `${mongoDbIcon}`,
+      `${nodeJSIcon}`,
+      `${expressJsICon}`,
+    ],
     year: "November 2024",
     links: ["https://sillystocks.netlify.app"],
     background:
@@ -142,7 +156,12 @@ export const ProjectData: IProject[] = [
     title: "Facendia",
     desc: "A task manager built with the MERN stack, designed to help users track daily tasks and  analyze their productivity and behaviors.",
     stack: ["React", "Express.js", "Node.js", "MongoDB"],
-    stackIcons: [],
+    stackIcons: [
+      `${reactIcon}`,
+      `${mongoDbIcon}`,
+      `${nodeJSIcon}`,
+      `${expressJsICon}`,
+    ],
     year: "January 2025 - Under development",
     links: ["https://github.com/MalteRoz/Facendia"],
     background:

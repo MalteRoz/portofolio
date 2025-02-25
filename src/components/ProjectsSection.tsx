@@ -34,31 +34,6 @@ const Projects = () => {
       </UpperWrapper>
       <LowerWrapper>
         <div className="project-section-container">
-          {/* <ProjectCard
-            title="FridgeScanner"
-            desc="A machine learning app built in React Native where users can scan their fridge and get healthy recipe suggestions based on the ingredients they have at home."
-            img={foodScannerImg}
-            stack={foodScannerStack}
-          />
-          <ProjectCard
-            title="Sund Nergården"
-            desc="A luxurious hotel and restaurant website for Sund Nergården, built with React and SCSS, featuring offerings and a third-party integrated booking system."
-            img={sundImg}
-            stack={sundStack}
-          />
-
-          <ProjectCard
-            title="Silly Stocks"
-            desc="A stock app built with the MERN stack, allowing users to browse stocks, news, crypto and more. Features include user authentication, stock search with suggestions, and the ability to save favorite stocks."
-            img={sillyStockImg}
-            stack={sillyStockStack}
-          />
-          <ProjectCard
-            title="Facendia"
-            desc="A task manager built with the MERN stack, designed to help users track daily tasks and  analyze their productivity and behaviors."
-            img={facendiaImg}
-            stack={facendiaStack}
-          /> */}
           <ProjectCardV2 />
         </div>
       </LowerWrapper>

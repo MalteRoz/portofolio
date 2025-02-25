@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./scss/_footer.scss";
 import { FiChevronRight } from "react-icons/fi";
-import { formatTime } from "../functions/digitalClock";
+import { formatTime } from "../hooks/digitalClock";
 import UpperWrapper from "./UpperWrapper";
 
 const Footer = () => {

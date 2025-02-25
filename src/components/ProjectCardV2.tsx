@@ -24,13 +24,10 @@ const ProjectCardV2 = () => {
                     // <p key={i}>{s}</p>;
                   })}
                 </div>
-                <Link
-                  to={"/project/" + d.title}
-                  className="link-style see-more"
-                >
-                  See more
-                </Link>
               </div>
+              <Link to={"/project/" + d.title} className="link-style see-more">
+                See more
+              </Link>
             </div>
           );
         })}
