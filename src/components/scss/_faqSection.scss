@@ -7,6 +7,19 @@
     
 }
 
+.wp-container {
+    @include m.flex(column, center, flex);
+    gap: 1rem;
+
+    .step-list {
+        @include m.flex(column, center, flex);
+        gap: 1rem;
+        li {
+            list-style: decimal
+        }
+    }
+}
+
 .my-stack-content {
     @include m.flex(column, center, flex);
     gap: 4rem;
@@ -28,6 +41,8 @@
                 width: 12.5%;
             }
         }
+
+       
 
     }
 

@@ -8,9 +8,18 @@
     align-items: center;
 
     .wrapper-lower-content {
-        padding: 4rem 2rem;
+        padding: 4rem 1rem;
         max-width: 1200px;
         width: 100%;
+    }
+}
+
+@media (min-width: 500px) {
+    .wrapper-lower {
+        .wrapper-lower-content {
+            padding: 4rem 2rem;
+            
+        }
     }
 }
 

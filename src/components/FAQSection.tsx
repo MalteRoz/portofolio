@@ -93,18 +93,32 @@ const FAQ = () => {
                 </div>
               </div>
             </FAQAccordion>
-            <FAQAccordion
-              question="How's my working progress"
-              answer="I'm big on planning and setting everything up before diving in to ensure a smooth process throughout the project. Changes will always come up during development, but having a well-structured plan makes it easier to get an initial picture of how the end product should behave and look. I focus on keeping my work structured and minimalistic."
-              // answer2="I start by taking initial notes on the intended functionality. Then, I map out the application's flow to identify potential challenges and find the most efficient way to begin."
-              answer3="My problem-solving method follows five steps:
-                  1. Understanding the problem
-                  2. Writing a step-by-step list in plain English
-                  3. Turning that list into pseudocode
-                  4. Implementing the code
-                  5. Testing the final solution
-                  This method isn't just for coding—it can be applied to many types of problem-solving. Try it yourself! 😊"
-            />
+            <FAQAccordion question="How's my working progress">
+              <div className="wp-container">
+                <p>
+                  I'm big on planning and setting everything up before diving in
+                  to ensure a smooth process throughout the project.
+                </p>
+                <p>
+                  Changes will always come up during development, but having a
+                  well-structured plan makes it easier to get an initial picture
+                  of how the end product should behave and look. I focus on
+                  keeping my work structured and minimalistic.
+                </p>
+                <p>My problem-solving method follows five steps:</p>
+                <div className="step-list">
+                  <li>Understanding the problem</li>
+                  <li>Writing a step-by-step list in plain English </li>
+                  <li>Turning that list into pseudocode </li>
+                  <li>Implementing the code</li>
+                  <li>Testing the final solution</li>
+                </div>
+                <p>
+                  This method isn't just for coding it can be applied to many
+                  types of problem-solving. Try it yourself! 😊
+                </p>
+              </div>
+            </FAQAccordion>
             <FAQAccordion
               question="Right now and the future"
               answer="As I mentioned earlier, I am currently a student and will be finishing my studies by May 2026. Right now, my focus is on learning as much as possible, finding my style, and refining my skills. I am currently working on expanding my knowledge in backend development to ensure safe data storage for users."
@@ -113,7 +127,7 @@ const FAQ = () => {
             />
             <FAQAccordion
               question="What else goes on in my life? "
-              answer="I love football and try to spend as much time as possible playing. When I'm not on the field, I'm either working out in other ways or spending time with friends and family, cooking food and enjoying some good beer or wine."
+              answer="I love football and try to spend as much time as possible playing. When I'm not on the field, I'm either working out in other ways or spending time with my girlfriend or friends and family, cooking food and enjoying some good beer or wine."
             />
           </section>
         </LowerWrapper>
