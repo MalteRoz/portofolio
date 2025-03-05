@@ -17,7 +17,6 @@ const foodScannerStack: any = [
   "Node.js",
   "MongoDB",
 ];
-
 const sundStack: any = ["React", "SCSS", "HTML5", "TypeScript"];
 
 const sillyStockStack: any = ["React", "Express.js", "Node.js", "MongoDB"];
@@ -26,17 +25,19 @@ const facendiaStack: any = ["React", "Express.js", "Node.js", "MongoDB"];
 const Projects = () => {
   return (
     <>
-      <UpperWrapper>
-        <SectionHeader
-          title="Projects I’ve Built "
-          subheader="I try to explor diffrent industries, solving real problems, and building meaningful solutions."
-        />
-      </UpperWrapper>
-      <LowerWrapper>
-        <div className="project-section-container">
-          <ProjectCardV2 />
-        </div>
-      </LowerWrapper>
+      <section id="projects">
+        <UpperWrapper>
+          <SectionHeader
+            title="Projects I’ve Built "
+            subheader="I try to explor diffrent industries, solving real problems, and building meaningful solutions."
+          />
+        </UpperWrapper>
+        <LowerWrapper>
+          <div className="project-section-container">
+            <ProjectCardV2 />
+          </div>
+        </LowerWrapper>
+      </section>
     </>
   );
 };

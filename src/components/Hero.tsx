@@ -1,9 +1,12 @@
-import React from "react";
+import React, { forwardRef, Ref } from "react";
 import "./scss/_hero.scss";
 import linkedInIcon from "../assets/devicon_linkedin.svg";
 import githubIcon from "../assets/akar-icons_github-fill.svg";
 import gmailIcon from "../assets/logos_google-gmail.svg";
 import LowerWrapper from "./LowerWrapper";
+import { Tooltip } from "@mui/material";
+
+interface HeroProps {}
 
 const Hero = () => {
   return (
@@ -23,13 +26,35 @@ const Hero = () => {
           </div>
         </div>
         <div className="contact-icons">
-          <img src={linkedInIcon} alt="linkedin icon" className="linkedin" />
-          <img src={githubIcon} alt="github icon" className="github" />
-          <img src={gmailIcon} alt="gmail icon" className="gmail" />
+          <Tooltip title="Send me a message!">
+            <a
+              href="https://www.linkedin.com/in/malteRozenbeek/"
+              target="_blank"
+            >
+              <img
+                src={linkedInIcon}
+                alt="linkedin icon"
+                className="linkedin"
+              />
+            </a>
+          </Tooltip>
+          <Tooltip title="See my selected projects and code!">
+            <a href="https://github.com/MalteRoz" target="_blank">
+              <img src={githubIcon} alt="github icon" className="github" />
+            </a>
+          </Tooltip>
+          <Tooltip title="Or be formal and send me an email!">
+            <a
+              href="https://www.linkedin.com/in/malteRozenbeek/"
+              target="_blank"
+            >
+              <img src={gmailIcon} alt="gmail icon" className="gmail" />
+            </a>
+          </Tooltip>
         </div>
       </div>
     </LowerWrapper>
   );
 };
 
-export default Hero;
+export default forwardRef(Hero);

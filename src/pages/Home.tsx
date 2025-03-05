@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Hero from "../components/Hero";
 import MyStack from "../components/MyStackSection";
 import Projects from "../components/ProjectsSection";

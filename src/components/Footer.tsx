@@ -20,22 +20,31 @@ const Footer = () => {
   return (
     <>
       <UpperWrapper>
-        <footer>
+        <footer id="contact">
           <div className="footer-upper">
             <p className="connect">Connect</p>
             <p className="time">{formatTime(time)}</p>
           </div>
           <div className="footer-middle">
             <div className="connect-box">
-              <p>LinkedIn</p>
+              <a
+                href="https://www.linkedin.com/in/malteRozenbeek/"
+                target="_blank"
+              >
+                <p>LinkedIn</p>
+              </a>
               <FiChevronRight size={20} />
             </div>
             <div className="connect-box">
-              <p>malte.rozenbeek@gmail.com</p>
+              <a href="mailto:malte.rozenbeek@gmail.com">
+                <p>malte.rozenbeek@gmail.com</p>
+              </a>
               <FiChevronRight size={20} />
             </div>
             <div className="connect-box">
-              <p>Github</p>
+              <a href="https://github.com/MalteRoz" target="_blank">
+                <p>Github</p>
+              </a>
               <FiChevronRight size={20} />
             </div>
           </div>

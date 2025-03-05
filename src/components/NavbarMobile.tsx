@@ -3,6 +3,7 @@ import { IoReorderTwo } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import "./scss/_navbarMobile.scss";
 import UpperWrapper from "./UpperWrapper";
+import { HashLink } from "react-router-hash-link";
 
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,9 +35,30 @@ const NavbarMobile = () => {
             <IoClose size={24} onClick={toggleNavbar} />
           </div>
           <div className="nav-options">
-            <li>Projects</li>
-            <li>FAQ</li>
-            <li>Contact Me👋</li>
+            <HashLink
+              to="#projects"
+              className="link-style"
+              smooth
+              onClick={toggleNavbar}
+            >
+              <li>Projects</li>
+            </HashLink>
+            <HashLink
+              to="#FAQ"
+              className="link-style"
+              smooth
+              onClick={toggleNavbar}
+            >
+              <li>FAQ</li>
+            </HashLink>
+            <HashLink
+              to="#contact"
+              className="link-style"
+              smooth
+              onClick={toggleNavbar}
+            >
+              <li>Contact me👋</li>
+            </HashLink>
           </div>
         </div>
       </UpperWrapper>

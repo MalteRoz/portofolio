@@ -1,5 +1,6 @@
 import React from "react";
 import UpperWrapper from "./UpperWrapper";
+import { HashLink } from "react-router-hash-link";
 import "./scss/_navbarDesktop.scss";
 
 const NavbarDesktop = () => {
@@ -13,9 +14,15 @@ const NavbarDesktop = () => {
               <p className="job-title-desktop">Fullstack web & app developer</p>
             </div>
             <div className="nav-options-desktop">
-              <li>Projects</li>
-              <li>FAQ</li>
-              <li>Contact Me👋</li>
+              <HashLink to="#projects" className="link-style" smooth>
+                <li>Projects</li>
+              </HashLink>
+              <HashLink to="#FAQ" className="link-style" smooth>
+                <li>FAQ</li>
+              </HashLink>
+              <HashLink to="#contact" className="link-style" smooth>
+                <li>Contact me👋</li>
+              </HashLink>
             </div>
           </nav>
         </header>

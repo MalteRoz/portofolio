@@ -20,7 +20,7 @@ footer {
         }
 
         .time {
-            width: 6ch; // Justera vid behov
+            width: 6ch; 
             display: inline-block;
         }
     }
@@ -33,9 +33,12 @@ footer {
         .connect-box {
             @include m.flex(row,center,  center);
             gap: 0.75rem;
-
-            p {
-                font-weight: 600;
+            a {
+                text-decoration: none;
+                color: black;
+                p {
+                    font-weight: 600;
+                }
             }
         }
     }

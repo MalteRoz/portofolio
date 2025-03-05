@@ -4,5 +4,63 @@
 .FAQ-section {
     @include m.flex(column, center, center);
     gap: 1rem;
+    
 }
 
+.my-stack-content {
+    @include m.flex(column, center, flex);
+    gap: 4rem;
+
+    .stack {
+
+        p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .icons {
+            @include m.flex(row, space-between, center);
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+            img {
+                width: 12.5%;
+            }
+        }
+
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    .my-stack-content {
+        .stack {
+            .icons {
+                img {
+                    width: 7.5%;
+                }
+            }            
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .my-stack-content {
+    
+        .stack {
+
+            // p {
+            //     font-size: 1.5rem;
+            // }
+
+            .icons {
+                @include m.flex(row, flex-start, center);
+                gap: 2rem;
+                img {
+                    width: 5%;
+                }
+            }            
+        }
+    }
+}
