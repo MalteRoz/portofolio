@@ -2,157 +2,197 @@
 @use "../../styles/variables" as v;
 
 .hero-container {
-    .upper {
-        .img {
-            width: 100%;
-            height: 15rem;
-            background-color: v.$borderColor;
-        }
+  .upper {
+    .img {
+      width: 100%;
+      height: 15rem;
+      background-color: v.$borderColor;
     }
+  }
 
-    .lower {
-
-        .hero-text-container {
-            .title {
-                padding: 2rem 0 1rem 0;
-                width: 80%;
-                font-size: 2rem;
-                font-weight: 700;
-            }
-
-            .text {
-                font-size: 1.25rem;
-                color: v.$secondaryTextColor;
-            }
+  .lower {
+    .hero-text-container {
+      .text-cont {
+        padding: 2rem 0 1rem 0;
+        width: 80%;
+        span {
+          font-size: 2rem;
+          font-weight: 700;
+          color: v.$secondaryTextColor;
+          color: black;
         }
-
+      }
     }
+  }
 
-    .contact-icons {
-        @include m.flex(row, flex-start, center);
+  .contact-icons {
+    @include m.flex(row, flex-start, center);
 
-        a {
-            margin: 2rem 2rem 0 0;
-            img {
-                height: 2.5rem;
-            }
-        }
+    a {
+      margin: 2rem 2rem 0 0;
+      img {
+        height: 2.5rem;
+      }
     }
+  }
 }
 
 @media (min-width: 500px) {
+  .hero-container {
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "c c";
+
+    .upper {
+      grid-area: b;
+
+      .img {
+        height: 15rem;
+        width: 15rem;
+      }
+    }
+
+    .lower {
+      grid-area: a;
+
+      .hero-text-container {
+        @include m.flex(column, center, flex-start);
+
+        .text-cont {
+          padding: 2rem 0 1rem 0;
+          width: 80%;
+          span {
+            font-size: 4rem;
+            font-weight: 700;
+            color: v.$secondaryTextColor;
+            color: black;
+          }
+        }
+
+        .title {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) {
     .hero-container {
-        display: grid;
-        grid-template-areas:
-            "a b"
-            "c c";
-
         .upper {
-            grid-area: b;
 
-            .img {
-                height: 15rem;
-                width: 15rem;
-            }
         }
 
         .lower {
-            grid-area: a;
-
             .hero-text-container {
                 @include m.flex(column, center, flex-start);
-
-                .title {
+                gap: 1rem;
+                width: 100%;
+        
+                .text-cont {
+                    width: 90%;
                     padding: 0;
+                    span {
+                      font-size: 2.5rem;
+                      font-weight: 700;
+                      color: v.$secondaryTextColor;
+                      color: black;
+                    } 
                 }
-            }
+        
+                .text {
+                    font-size: 1.125rem;
+                }
+              }
         }
     }
 }
 
 @media (min-width: 1023px) {
-    .hero-container {
-        .upper {
-            width: 50%;
+  .hero-container {
+    .upper {
+      width: 50%;
 
-            .img {
-                width: 20rem;
-                height: 20rem;
-            }
-        }
-
-        .lower {
-            width: 70%;
-
-            .hero-text-container {
-                @include m.flex(column, center, flex-start);
-                gap: 1rem;
-                width: 100%;
-
-                .title {
-                    font-size: 3rem;
-                }
-
-                .text {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-
-        .contact-icons {
-            a {
-                margin: 2rem 2rem 0 0;
-                img {
-                    width: 100%;
-                    height: 3rem;
-                }
-            }
-        }
+      .img {
+        width: 20rem;
+        height: 20rem;
+      }
     }
+
+    .lower {
+      width: 70%;
+
+      .hero-text-container {
+        @include m.flex(column, center, flex-start);
+        gap: 1rem;
+        width: 100%;
+
+        .text-cont {
+            width: 90%;
+            padding: 0;
+            span {
+              font-size: 3rem;
+              font-weight: 700;
+              color: v.$secondaryTextColor;
+              color: black;
+            } 
+        }
+
+        .text {
+            font-size: 1.5rem;
+        }
+      }
+    }
+
+    .contact-icons {
+      a {
+        margin: 2rem 2rem 0 0;
+        img {
+          width: 100%;
+          height: 3rem;
+        }
+      }
+    }
+  }
 }
 
-
 @media (min-width: 1440px) {
-    .hero-container {
-
-
-        .upper {
-
-
-            .img {
-                height: 26.5rem;
-                width: 26.5rem;
-            }
-
-        }
-
-        .lower {
-            width: 100%;
-
-            .hero-text-container {
-                @include m.flex(column, center, flex-start);
-                gap: 2rem;
-                width: 100%;
-
-                .title {
-                    width: 70%;
-                    font-size: 3.5rem;
-                    padding: 0;
-                }
-
-                .text {
-                    width: 75%;
-                    font-size: 1.75rem;
-                    color: v.$secondaryTextColor;
-                }
-            }
-        }
-
-        // .contact-icons {
-        //     img {
-        //         width: 7.5%;
-        //     }
-        // }
-
+  .hero-container {
+    .upper {
+      .img {
+        height: 26.5rem;
+        width: 26.5rem;
+      }
     }
+
+    .lower {
+      width: 100%;
+
+      .hero-text-container {
+        @include m.flex(column, center, flex-start);
+        gap: 2rem;
+        width: 100%;
+
+        .title {
+          width: 70%;
+          font-size: 3.5rem;
+          padding: 0;
+        }
+
+        .text {
+          width: 75%;
+          font-size: 1.75rem;
+          color: v.$secondaryTextColor;
+        }
+
+      }
+    }
+
+    // .contact-icons {
+    //     img {
+    //         width: 7.5%;
+    //     }
+    // }
+  }
 }

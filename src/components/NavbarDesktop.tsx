@@ -2,6 +2,7 @@ import React from "react";
 import UpperWrapper from "./UpperWrapper";
 import { HashLink } from "react-router-hash-link";
 import "./scss/_navbarDesktop.scss";
+import SplitText from "./ui/SplitText";
 
 const NavbarDesktop = () => {
   return (

@@ -7,6 +7,7 @@ import expressJsICon from "../assets/expressJs.svg";
 import htmlIcon from "../assets/html.svg";
 import typeScriptIcon from "../assets/Vector.svg";
 import sassIcon from "../assets/sass-svgrepo-com.svg";
+import tailwind from "../assets/tailwind.svg";
 
 export const ProjectData: IProject[] = [
   {
@@ -53,8 +54,9 @@ export const ProjectData: IProject[] = [
       },
     ],
     keyFunctionality: ["Scan fridge and get recipe ", "Sign in sign up"],
-    conclusion:
+    conclusion: [
       "This mobile app project, though still in development, is proving to be an excellent learning experience. I'm gaining practical skills in React Native for building the user interface and mobile-specific functionality, as well as Express.js and Node.js for developing the backend API and server-side logic.",
+    ],
   },
   {
     id: 2,
@@ -96,8 +98,9 @@ export const ProjectData: IProject[] = [
       "Show restaurant",
       "Third part booking system",
     ],
-    conclusion:
+    conclusion: [
       "Working on this frontend project honed my ability to collaborate with clients, understand their needs, and implement requested changes. It was also a perfect project to train your figma skills because the site hade a good amount of both information and pictures we could use",
+    ],
   },
   {
     id: 3,
@@ -148,47 +151,93 @@ export const ProjectData: IProject[] = [
       "Look at related stocks and crypto",
       "Browse top picks",
     ],
-    conclusion:
+    conclusion: [
       "We learned a lot during this project, what to do and what to look out for. Since this was our first full stack project we where more than satisfied. There is a lot to improve and functionality to be fixed before calling this a finished product. But it laid a good foreground for our knowledge and made me want to improve my development skills more.",
+    ],
   },
   {
     id: 4,
-    title: "Facendia",
-    desc: "A task manager built with the MERN stack, designed to help users track daily tasks and  analyze their productivity and behaviors.",
-    stack: ["React", "Express.js", "Node.js", "MongoDB"],
+    title: "Terni.",
+    desc: "A website showcasing the italian restaurant Terni with integrated third party booking system",
+    stack: ["React", "TypeScript", "Tailwind", "Node.Js"],
     stackIcons: [
       `${reactIcon}`,
-      `${mongoDbIcon}`,
+      `${typeScriptIcon}`,
       `${nodeJSIcon}`,
-      `${expressJsICon}`,
+      `${tailwind}`,
     ],
-    year: "January 2025 - Under development",
-    links: ["https://github.com/MalteRoz/Facendia"],
+    year: "Febraury 2025 - Febraury 2025",
+    links: ["https://terni.netlify.app/"],
     background:
-      "I have built this project to learn basic CRUD methods and how to deploy both frontend and backend to the cloud. The project started as a simpler version with TypeScript, HTML and localStorage. Since I was happy with the design and basic flow, I chose to create a version 2 using React and the MERN stack. Now I'm planning version 3 with updated technology and more robust code.  I posted version 2 on Reddit to get user feedback and got 27 users in the first three days before shutting it down to focus on the development of version 3. I'm happy with the feedback and look forward to implementing it in the next version",
+      "This project is a responsive frontend website for a restaurant that we got as a group assignment from school, it is built with React and Tailwind CSS. The website offers a user-friendly experience with a focus on seamless table booking. A key feature is an integrated booking component that uses a third-party API to manage reservations. Users can easily search for available tables and see available times and days for the next three days",
     challenges: [
       {
-        header: "Backend",
-        text: "first solo `Fullstack` project so knowledge was limited",
+        header: "Creating booking component",
+        text: "It was hard implemeting a fully functionall booking components from scratch",
       },
       {
-        header: "Deployment",
-        text: "had problems deploying the backend online",
+        header: "Design",
+        text: "creating unique and appealing designs that effectively showcase the restaurant offering",
       },
     ],
     solutions: [
       {
-        header: "Endless youtube videos",
-        text: "To get forward with the project i needed to get a good first introduction to Node.Js and Express.Js so i watched alot of videos and tried to remake the end product. While i did som backend work at Silly Stocks this was alot more challanging but there was code i could use from that project to get going with the backend. I did alot of misstakes but they made the code better and better.",
+        header: "Block by block",
+        text: "We knew that we wanted to showcase multiple days from the user's initial search, but we wanted to avoid a traditional calendar that many booking systems currently use. So, we began exploring the API's various data manipulation and call operations to understand how it functioned. Shortly, we were able to display the available and booked tables for the day of the user's initial search. Following this, we aimed to extend the functionality to show multiple days forward. To achieve this, we refactored the function's logic to accept a number as input, enabling it to return data representing the booked and available times for the corresponding number of days from the initial search.",
+      },
+      {
+        header: "Insparation",
+        text: "Our design process began with extensive research of restaurant websites, both in Sweden and internationally. We aimed to create a minimalist design that effectively conveyed all essential information expected from a restaurant's web page. We focused on researching layout, color palettes, and typography. After gathering inspiration, we compiled our findings into a mood board, serving as a visual blueprint for our design. We then prioritized creating a clean and intuitive layout. We began by outlining each section required for the website and then experimented with layout options in Figma until we developed a preliminary layout .Then we built apon that inital figma wireframes until we had a third web-design that we wanted to pursue.",
       },
     ],
     keyFunctionality: [
-      "Sign in sign up",
-      "Create, read, update and delete tasks",
-      "Dashboard for tracking tasks",
-      "Task history check",
+      "Showcase restaurant and menu",
+      "Online table booking",
+      "Admin page to handle bookings with crurd operations ",
     ],
-    conclusion:
-      "I'm building a more comprehensive task manager that goes beyond a typical to-do app.  This project has significantly improved my understanding of structured version control and sharpened my skills with Node.js and Express.  It's also proving to be an good learning experience for building modular React code and implementing secure data handling.",
+    conclusion: [
+      "This project was an excellent opportunity for our group to sharpen our frontend skills and practice creating seamless and clean designs. We focused on building a user-friendly experience with clear navigation and a modern visual style. A particularly interesting challenge was integrating a third-party booking system. Since the API only provided CRUD operations, we had to build all the logic for displaying booked and available tables from scratch, which was a very educational process for the team. The admin page was an important addition that gave the project a realistic and useful dimension for a potential restaurant.",
+      "Personally, and for the rest of the group, this project was a valuable experience. We had the opportunity to deepen our knowledge of React and Tailwind CSS. At the same time, we learned to handle complex logical problems and create an intuitive user experience as a group. In the future, we would like to expand the website with more content and optimize the navbar to be more compact when scrolling, which would further enhance the user experience",
+    ],
   },
+  // {
+  //   id: 4,
+  //   title: "Facendia",
+  //   desc: "A task manager built with the MERN stack, designed to help users track daily tasks and  analyze their productivity and behaviors.",
+  //   stack: ["React", "Express.js", "Node.js", "MongoDB"],
+  //   stackIcons: [
+  //     `${reactIcon}`,
+  //     `${mongoDbIcon}`,
+  //     `${nodeJSIcon}`,
+  //     `${expressJsICon}`,
+  //   ],
+  //   year: "January 2025 - Under development",
+  //   links: ["https://github.com/MalteRoz/Facendia"],
+  //   background:
+  //     "I have built this project to learn basic CRUD methods and how to deploy both frontend and backend to the cloud. The project started as a simpler version with TypeScript, HTML and localStorage. Since I was happy with the design and basic flow, I chose to create a version 2 using React and the MERN stack. Now I'm planning version 3 with updated technology and more robust code.  I posted version 2 on Reddit to get user feedback and got 27 users in the first three days before shutting it down to focus on the development of version 3. I'm happy with the feedback and look forward to implementing it in the next version",
+  //   challenges: [
+  //     {
+  //       header: "Backend",
+  //       text: "first solo `Fullstack` project so knowledge was limited",
+  //     },
+  //     {
+  //       header: "Deployment",
+  //       text: "had problems deploying the backend online",
+  //     },
+  //   ],
+  //   solutions: [
+  //     {
+  //       header: "Endless youtube videos",
+  //       text: "To get forward with the project i needed to get a good first introduction to Node.Js and Express.Js so i watched alot of videos and tried to remake the end product. While i did som backend work at Silly Stocks this was alot more challanging but there was code i could use from that project to get going with the backend. I did alot of misstakes but they made the code better and better.",
+  //     },
+  //   ],
+  //   keyFunctionality: [
+  //     "Sign in sign up",
+  //     "Create, read, update and delete tasks",
+  //     "Dashboard for tracking tasks",
+  //     "Task history check",
+  //   ],
+  //   conclusion:
+  //     "I'm building a more comprehensive task manager that goes beyond a typical to-do app.  This project has significantly improved my understanding of structured version control and sharpened my skills with Node.js and Express.  It's also proving to be an good learning experience for building modular React code and implementing secure data handling.",
+  // },
 ];

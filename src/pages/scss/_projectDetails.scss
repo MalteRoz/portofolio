@@ -132,6 +132,11 @@
     }
   }
 
+  .project-page-conclusion {
+    @include m.flex(column, center, flex-start);
+    gap: 1rem;
+  }
+
   .project-page-sub-title {
     font-size: 1.25rem;
     font-weight: 700;

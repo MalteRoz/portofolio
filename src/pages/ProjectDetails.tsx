@@ -108,7 +108,15 @@ const ProjectDetails = () => {
           </FAQAccordion>
 
           <FAQAccordion question="Conclusion">
-            <div>{projectData?.conclusion}</div>
+            <div className="project-page-conclusion">
+              {projectData?.conclusion.map((c, index) => {
+                return (
+                  <>
+                    <p>{c}</p>
+                  </>
+                );
+              })}
+            </div>
           </FAQAccordion>
         </div>
       </LowerWrapper>

@@ -11,5 +11,5 @@ export interface IProject {
   challenges: { header: string; text: string }[];
   solutions: { header: string; text: string }[];
   keyFunctionality: string[];
-  conclusion: string;
+  conclusion: string[];
 }
