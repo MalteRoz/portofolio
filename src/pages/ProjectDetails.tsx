@@ -96,7 +96,7 @@ const ProjectDetails = () => {
 
           <FAQAccordion question="Solutions">
             <div className="project-page-solution">
-              {projectData?.solutions.map((s, index) => {
+              {projectData?.solutions.map((s) => {
                 return (
                   <div>
                     <p className="project-page-solution-header">{s.header}</p>
@@ -109,7 +109,7 @@ const ProjectDetails = () => {
 
           <FAQAccordion question="Conclusion">
             <div className="project-page-conclusion">
-              {projectData?.conclusion.map((c, index) => {
+              {projectData?.conclusion.map((c) => {
                 return (
                   <>
                     <p>{c}</p>
