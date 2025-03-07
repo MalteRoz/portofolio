@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import "./scss/_upperWrapper.scss";
 
 interface UpperWrapperProps {

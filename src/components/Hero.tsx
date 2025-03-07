@@ -1,4 +1,4 @@
-import React, { forwardRef, Ref } from "react";
+import { forwardRef } from "react";
 import "./scss/_hero.scss";
 import linkedInIcon from "../assets/devicon_linkedin.svg";
 import githubIcon from "../assets/akar-icons_github-fill.svg";

@@ -1,4 +1,3 @@
-import React from "react";
 import { IProject } from "../models/IProject";
 import { ProjectData } from "../data/projetsData";
 import { Link } from "react-router-dom";

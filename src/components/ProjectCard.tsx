@@ -1,6 +1,5 @@
-import React from "react";
 import "./scss/_projectCard.scss";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;

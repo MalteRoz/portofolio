@@ -1,4 +1,3 @@
-import React from "react";
 import SectionHeader from "./SectionHeader";
 import FAQAccordion from "./FAQAccordion";
 import "./scss/_faqSection.scss";

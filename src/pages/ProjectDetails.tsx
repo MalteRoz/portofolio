@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { IProject } from "../models/IProject";
 import { ProjectData } from "../data/projetsData";
 import { Link, useParams } from "react-router-dom";
@@ -125,9 +125,3 @@ const ProjectDetails = () => {
 };
 
 export default ProjectDetails;
-
-//Flöde
-
-//lägga in projectCardV2 i projectSection
-//link för att lägga till länk till projectDetails, skicka med id som useParam
-//i projectDetails useParams på id för att ta fram rätt project för att skriva ut på sidan

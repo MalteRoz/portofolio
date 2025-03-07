@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./scss/_footer.scss";
 import { FiChevronRight } from "react-icons/fi";
 import { formatTime } from "../hooks/digitalClock";

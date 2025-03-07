@@ -1,4 +1,3 @@
-import React from "react";
 import "./scss/_myStack.scss";
 import { Tooltip } from "@mui/material";
 
