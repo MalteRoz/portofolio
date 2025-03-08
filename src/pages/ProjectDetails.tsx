@@ -6,6 +6,7 @@ import { HiOutlineChevronLeft } from "react-icons/hi";
 import LowerWrapper from "../components/LowerWrapper";
 import "./scss/_projectDetails.scss";
 import FAQAccordion from "../components/FAQAccordion";
+import { Tooltip } from "@mui/material";
 
 const ProjectDetails = () => {
   const [projectData, setProjectData] = useState<IProject>();
@@ -83,12 +84,10 @@ const ProjectDetails = () => {
             <div className="project-page-challenges">
               {projectData?.challenges.map((c, index) => {
                 return (
-                  <div>
-                    <li key={index}>
-                      <span>{c.header}</span>
-                      {c.text}
-                    </li>
-                  </div>
+                  <li key={index}>
+                    <span>{c.header}</span>
+                    {c.text}
+                  </li>
                 );
               })}
             </div>

@@ -94,9 +94,12 @@
                     img {
                         width: 2.5rem;
                     }
-                    
                 }
             }
+        }
+
+        .project-card:hover {
+            transform: scale(1.03);
         }
     }
 }
@@ -123,6 +126,4 @@
 }
 }
 
- .project-card:hover {
-     transform: scale(1.03);
- }
+ 

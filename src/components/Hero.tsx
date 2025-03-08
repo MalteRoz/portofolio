@@ -35,7 +35,7 @@ const Hero = () => {
               </div>
               <p className="text">
                 I’m a developer with a passion for crafting intuitive web and
-                app experiences. From concept to deployment, I focus on
+                mobile experiences. From concept to deployment, I focus on
                 delivering clean, scalable solutions that make a meaningful
                 impact.
               </p>

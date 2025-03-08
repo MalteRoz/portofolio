@@ -24,11 +24,11 @@ export const ProjectData: IProject[] = [
     year: "August 2024",
     links: ["https://github.com/ChristofferNo/foodScanner2.0"],
     background:
-      "Me and a friend was fooling around and tried to come up with cool startup idees and we came along this one and it felt like a fun project to try and build. We are currently finishing our fist BETA version and then we are going to send it out for users to try. After that our plan is to gather the feedback and hire a UI/UX designer to get good wireframes for the app",
+      "Me and a friend was fooling around and tried to come up with cool startup idees and we came along this one and it felt like a fun project to try and build. We are currently finishing our fist BETA version and then we are going to send it out for users to try. After that our plan is to gather the feedback and hire a UI/UX designer to get good wireframes for the app.",
     challenges: [
       {
         header: "APIs:",
-        text: "our API turned out to be a scam witch prevented us from getting valid updated data due to other sources having high prices",
+        text: "our API turned out to be a scam witch prevented us from getting valid updated data due to other sources having high prices.",
       },
       {
         header: "Design:",
@@ -41,7 +41,7 @@ export const ProjectData: IProject[] = [
     ],
     solutions: [
       {
-        header: "Self created mockdata ",
+        header: "Self created mockdata",
         text: "We created mockadata to simulate the former structure of the used api. It made the page not as living but we could use the same initall code to somewhat finish the page.",
       },
       {
@@ -50,7 +50,7 @@ export const ProjectData: IProject[] = [
       },
       {
         header: "Open source projects and trial and error",
-        text: "To solve the structure problem we took the initiative to look at open source projects to get a glimpse at how we could structure our project. We tried to find a good standard and it took alot trial and error to before we where satisfied.  ",
+        text: "To solve the structure problem we took the initiative to look at open source projects to get a glimpse at how we could structure our project. We tried to find a good standard and it took alot trial and error to before we where satisfied.",
       },
     ],
     keyFunctionality: ["Scan fridge and get recipe ", "Sign in sign up"],
@@ -72,11 +72,11 @@ export const ProjectData: IProject[] = [
     year: "August 2024",
     links: ["https://demosundnergarden.netlify.app/"],
     background:
-      "Me and a friend found a hotell that had a outdated Wordpress page that was poorly made for mobile devices and poor performance but had good potential. We begain to make wireframes and then proceded to make the website for the hotell with the information and pictures from there old site.",
+      "My friend and I discovered a hotel with an outdated WordPress website. The site suffered from poor mobile optimization and performance, despite having significant potential. We began by creating wireframes to visualize the new design. Subsequently, we developed a new website for the hotel, utilizing the existing information and imagery from their previous site. We focused on improving mobile responsiveness and overall site performance",
     challenges: [
       {
         header: "Animations",
-        text: "make sutiable animations without making the page to flashy or switch from the luxurious theme",
+        text: "make sutiable animations without making the page to flashy or switch from the luxurious theme.",
       },
       {
         header: "Design",
@@ -99,7 +99,7 @@ export const ProjectData: IProject[] = [
       "Third part booking system",
     ],
     conclusion: [
-      "Working on this frontend project honed my ability to collaborate with clients, understand their needs, and implement requested changes. It was also a perfect project to train your figma skills because the site hade a good amount of both information and pictures we could use",
+      "Working on this frontend project honed my ability to collaborate with clients, understand their needs, and implement requested changes. It was also a perfect project to train your figma skills because the site hade a good amount of both information and pictures we could use.",
     ],
   },
   {
@@ -120,7 +120,7 @@ export const ProjectData: IProject[] = [
     challenges: [
       {
         header: "APIs:",
-        text: "our API turned out to be a scam witch prevented us from getting valid updated data due to other sources having high prices",
+        text: "our API turned out to be a scam witch prevented us from getting valid updated data due to other sources having high prices.",
       },
       {
         header: "Design:",
@@ -134,15 +134,15 @@ export const ProjectData: IProject[] = [
     solutions: [
       {
         header: "Self created mockdata ",
-        text: "We created mockadata to simulate the former structure of the used api. It made the page not as living but we could use the same initall code to somewhat finish the page.",
+        text: "We create mock data to simulate the former structure of the used api. It made the page not as living but we could use the same initial code to somewhat finish the page",
       },
       {
         header: "Crash course and long planning hours",
-        text: "Since our course dont involve UX/UI designing we had to improvise and apdapt to the situation. We all agreed to take a crash course in figma to get the basics going so that we could form a respectable sketch. We spend good time planing the project to ensure smooth codeing. This made us more secure in figma and soon enough we had a design we could be happy with. ",
+        text: "Since our course dont involve UX/UI designing we had to improvise and apdapt to the situation. We all agreed to take a crash course in figma to get the basics going so that we could form a respectable sketch. We spend good time planing the project to ensure smooth codeing. This made us more secure in figma and soon enough we had a design we could be happy with.",
       },
       {
         header: "Open source projects and trial and error",
-        text: "To solve the structure problem we took the initiative to look at open source projects to get a glimpse at how we could structure our project. We tried to find a good standard and it took alot trial and error to before we where satisfied.  ",
+        text: "To solve the structure problem we took the initiative to look at open source projects to get a glimpse at how we could structure our project. We tried to find a good standard and it took alot trial and error to before we where satisfied.",
       },
     ],
     keyFunctionality: [
@@ -158,7 +158,7 @@ export const ProjectData: IProject[] = [
   {
     id: 4,
     title: "Terni.",
-    desc: "A website showcasing the italian restaurant Terni with integrated third party booking system",
+    desc: "A website showcasing the italian restaurant Terni with integrated third party booking system.",
     stack: ["React", "TypeScript", "Tailwind", "Node.Js"],
     stackIcons: [
       `${reactIcon}`,
@@ -169,15 +169,15 @@ export const ProjectData: IProject[] = [
     year: "Febraury 2025 - Febraury 2025",
     links: ["https://terni.netlify.app/"],
     background:
-      "This project is a responsive frontend website for a restaurant that we got as a group assignment from school, it is built with React and Tailwind CSS. The website offers a user-friendly experience with a focus on seamless table booking. A key feature is an integrated booking component that uses a third-party API to manage reservations. Users can easily search for available tables and see available times and days for the next three days",
+      "This project is a responsive frontend website for a restaurant that we got as a group assignment from school, it is built with React and Tailwind CSS. The website offers a user-friendly experience with a focus on seamless table booking. A key feature is an integrated booking component that uses a third-party API to manage reservations. Users can easily search for available tables and see available times and days for the next three days.",
     challenges: [
       {
         header: "Creating booking component",
-        text: "It was hard implemeting a fully functionall booking components from scratch",
+        text: "It was hard implemeting a fully functionall booking components from scratch.",
       },
       {
         header: "Design",
-        text: "creating unique and appealing designs that effectively showcase the restaurant offering",
+        text: "creating unique and appealing designs that effectively showcase the restaurant offering.",
       },
     ],
     solutions: [
@@ -193,11 +193,11 @@ export const ProjectData: IProject[] = [
     keyFunctionality: [
       "Showcase restaurant and menu",
       "Online table booking",
-      "Admin page to handle bookings with crurd operations ",
+      "Admin page to handle bookings with crurd operations",
     ],
     conclusion: [
       "This project was an excellent opportunity for our group to sharpen our frontend skills and practice creating seamless and clean designs. We focused on building a user-friendly experience with clear navigation and a modern visual style. A particularly interesting challenge was integrating a third-party booking system. Since the API only provided CRUD operations, we had to build all the logic for displaying booked and available tables from scratch, which was a very educational process for the team. The admin page was an important addition that gave the project a realistic and useful dimension for a potential restaurant.",
-      "Personally, and for the rest of the group, this project was a valuable experience. We had the opportunity to deepen our knowledge of React and Tailwind CSS. At the same time, we learned to handle complex logical problems and create an intuitive user experience as a group. In the future, we would like to expand the website with more content and optimize the navbar to be more compact when scrolling, which would further enhance the user experience",
+      "Personally, and for the rest of the group, this project was a valuable experience. We had the opportunity to deepen our knowledge of React and Tailwind CSS. At the same time, we learned to handle complex logical problems and create an intuitive user experience as a group. In the future, we would like to expand the website with more content and optimize the navbar to be more compact when scrolling, which would further enhance the user experience.",
     ],
   },
   // {

@@ -12,7 +12,7 @@ const Projects = () => {
         <UpperWrapper>
           <SectionHeader
             title="Projects I’ve Built "
-            subheader="I try to explor diffrent industries, solving real problems, and building meaningful solutions."
+            subheader="I try to explore different industries, solving real problems, and building meaningful solutions."
           />
         </UpperWrapper>
         <LowerWrapper>

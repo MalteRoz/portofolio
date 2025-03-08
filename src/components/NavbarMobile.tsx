@@ -25,7 +25,7 @@ const NavbarMobile = () => {
           <nav>
             <div className="nav-text-container">
               <p className="name">Malte Rozenbeek</p>
-              <p className="job-title">Fullstack web & app developer</p>
+              <p className="job-title">Fullstack web & mobile developer</p>
             </div>
             <IoReorderTwo size={24} onClick={toggleNavbar} />
           </nav>
