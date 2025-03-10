@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="hero-container">
         <AnimatedContent>
           <div className="upper">
-            <div className="img"></div>
+            <div className="img">Test</div>
           </div>
         </AnimatedContent>
         <div className="lower">

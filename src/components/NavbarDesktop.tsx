@@ -1,6 +1,7 @@
 import UpperWrapper from "./UpperWrapper";
 import { HashLink } from "react-router-hash-link";
 import "./scss/_navbarDesktop.scss";
+import { Link } from "react-router-dom";
 
 const NavbarDesktop = () => {
   return (
@@ -8,12 +9,14 @@ const NavbarDesktop = () => {
       <UpperWrapper>
         <header>
           <nav>
-            <div className="nav-text-container-desktop">
-              <p className="name-desktop">Malte Rozenbeek</p>
-              <p className="job-title-desktop">
-                Fullstack web & mobile developer
-              </p>
-            </div>
+            <Link to={"/"} className="link-style" style={{ cursor: "pointer" }}>
+              <div className="nav-text-container-desktop">
+                <p className="name-desktop">Malte Rozenbeek</p>
+                <p className="job-title-desktop">
+                  Fullstack web & mobile developer
+                </p>
+              </div>
+            </Link>
             <div className="nav-options-desktop">
               <HashLink to="#projects" className="link-style" smooth>
                 <li>Projects</li>

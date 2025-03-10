@@ -22,7 +22,7 @@
     .title-desc-container {
       @include m.flex(column, center, flex-start);
       border: 1px solid v.$borderColor;
-      padding: 2rem;
+      padding: 1rem;
         gap: 1rem;
 
       .project-page-title {
@@ -35,7 +35,7 @@
       @include m.flex(column, center, flex-start);
       border: 1px solid v.$borderColor;
       gap: 2rem;
-      padding: 2rem;
+      padding: 1rem;
       width: 100%;
 
       .year-links-container {
@@ -62,7 +62,7 @@
 
       .project-page-key-functionallity {
         @include m.flex(column, center, flex-start);
-        gap: 0.5rem;
+        gap: 1rem;
         li {
           list-style: decimal;
 
@@ -78,8 +78,7 @@
         width: 100%;
         flex-wrap: wrap;
         border: 1px solid v.$borderColor;
-        gap: 3rem;
-        padding: 2rem;
+        padding: 1rem;
         div { 
           @include m.flex(row, center center);
             p {
@@ -147,7 +146,6 @@
 
     .project-page-container {
         .project-page-upper {
-            height: 22.5rem;
             display: grid;
             grid-template-areas: 
             "a b"
@@ -156,16 +154,19 @@
             .title-desc-container {
                 grid-area: a;
                 align-self: stretch;
+                padding: 2rem;
             }
     
             .project-page-year-functionallity-container {
                 grid-area: b;
                 align-self: stretch;
+                padding: 2rem;
             }
 
             .project-page-stack {
                 grid-area: c;
                 align-self: stretch;
+                padding: 2rem;
 
                 div {
                   img {

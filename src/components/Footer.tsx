@@ -31,21 +31,27 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/malteRozenbeek/"
                 target="_blank"
               >
-                <p>LinkedIn</p>
+                <span>
+                  <p>LinkedIn</p>
+                  <FiChevronRight size={20} className="chevron" />
+                </span>
               </a>
-              <FiChevronRight size={20} />
             </div>
             <div className="connect-box">
               <a href="mailto:malte.rozenbeek@gmail.com">
-                <p>malte.rozenbeek@gmail.com</p>
+                <span>
+                  <p>malte.rozenbeek@gmail.com</p>
+                  <FiChevronRight size={20} className="chevron" />
+                </span>
               </a>
-              <FiChevronRight size={20} />
             </div>
             <div className="connect-box">
               <a href="https://github.com/MalteRoz" target="_blank">
-                <p>Github</p>
+                <span>
+                  <p>Github</p>
+                  <FiChevronRight size={20} className="chevron" />
+                </span>
               </a>
-              <FiChevronRight size={20} />
             </div>
           </div>
           <div className="footer-lower">

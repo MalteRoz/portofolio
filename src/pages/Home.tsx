@@ -3,6 +3,7 @@ import Projects from "../components/ProjectsSection";
 import FAQ from "../components/FAQSection";
 
 import "./scss/_home.scss";
+import GoToTop from "../components/GoToTop";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Projects />
         {/* <MyStack /> */}
         <FAQ />
+        <GoToTop />
       </div>
     </>
   );

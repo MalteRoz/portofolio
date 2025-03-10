@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import "./scss/_navbarMobile.scss";
 import UpperWrapper from "./UpperWrapper";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +24,12 @@ const NavbarMobile = () => {
       <UpperWrapper>
         <header>
           <nav>
-            <div className="nav-text-container">
-              <p className="name">Malte Rozenbeek</p>
-              <p className="job-title">Fullstack web & mobile developer</p>
-            </div>
+            <Link to={"/"} className="link-style" style={{ cursor: "pointer" }}>
+              <div className="nav-text-container">
+                <p className="name">Malte Rozenbeek</p>
+                <p className="job-title">Fullstack web & mobile developer</p>
+              </div>
+            </Link>
             <IoReorderTwo size={24} onClick={toggleNavbar} />
           </nav>
         </header>

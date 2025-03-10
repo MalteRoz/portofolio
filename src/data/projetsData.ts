@@ -116,7 +116,7 @@ export const ProjectData: IProject[] = [
     year: "November 2024",
     links: ["https://sillystocks.netlify.app"],
     background:
-      "I built this project with my classmates where we all tried this as our first react project where we wanted to use APIs to build a bigger application. We started with some wireframes in figma and then turned it into a application. Unfortunately we could not get our backend to work on netlify.",
+      "I built this project with my classmates where we all tried this as our first react project where we wanted to use APIs to build a bigger application. We started with some wireframes in figma and then turned it into a application. Unfortunately we are all students so without funding it would cost us to much to host the backend.",
     challenges: [
       {
         header: "APIs:",
