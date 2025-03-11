@@ -34,8 +34,21 @@
       margin: 2rem 1.5rem 0 0;
 
       img {
-        width: 2rem;
-        height: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 424px) {
+  .hero-container {
+
+    .lower {
+      .hero-text-container {
+        .text-cont {
+          width: 70%;
+        }
       }
     }
   }
@@ -64,10 +77,11 @@
       .hero-text-container {
         @include m.flex(column, center, flex-start);
         gap: 1rem;
-        width: 80%;
+        width: 75%;
 
         .text-cont {
           padding: 0;
+          width: 80%;
 
           span {
             font-size: 2.5rem;
@@ -114,7 +128,7 @@
         width: 100%;
 
         .text-cont {
-          width: 60%;
+          width: 50%;
           padding: 0;
 
           span {
@@ -134,7 +148,6 @@
 
     .contact-icons {
       a {
-        // margin: 2rem 2rem 0 0;
         margin-right: 2rem;
 
         img {
@@ -175,18 +188,12 @@
         }
 
         .text {
-          width: 75%;
+          width: 70%;
           font-size: 1.75rem;
           color: v.$secondaryTextColor;
         }
 
       }
     }
-
-    // .contact-icons {
-    //     img {
-    //         width: 7.5%;
-    //     }
-    // }
   }
 }
