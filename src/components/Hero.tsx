@@ -7,6 +7,7 @@ import LowerWrapper from "./LowerWrapper";
 import { Tooltip } from "@mui/material";
 import SplitText from "./ui/SplitText";
 import AnimatedContent from "./ui/AnimatedContent";
+import heroImg from "../assets/imgs/mr2.svg";
 
 const Hero = () => {
   return (
@@ -14,7 +15,8 @@ const Hero = () => {
       <div className="hero-container">
         <AnimatedContent>
           <div className="upper">
-            <div className="img">Test</div>
+            {/* <div className="img">Test</div> */}
+            <img src={heroImg} alt="" />
           </div>
         </AnimatedContent>
         <div className="lower">

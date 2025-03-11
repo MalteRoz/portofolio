@@ -2,11 +2,12 @@
 @use "../../styles/variables" as v;
 
 .hero-container {
+
   .upper {
-    .img {
-      width: 100%;
+    img {
       height: 15rem;
-      background-color: v.$borderColor;
+      border-radius: 16px;
+      align-self: flex-start;
     }
   }
 
@@ -30,56 +31,15 @@
     @include m.flex(row, flex-start, center);
 
     a {
-      margin: 2rem 2rem 0 0;
+      margin: 2rem 1.5rem 0 0;
 
       img {
-        height: 2.5rem;
+        width: 2rem;
+        height: 2rem;
       }
     }
   }
 }
-
-// @media (min-width: 500px) {
-//   .hero-container {
-//     // display: grid;
-//     // grid-template-areas:
-//     //   "a b"
-//     //   "c c";
-
-//     .upper {
-//       // grid-area: b;
-
-
-//       .img {
-//         max-width: 15rem;
-//         height: 15rem;
-//       }
-//     }
-
-//     .lower {
-//       // grid-area: a;
-
-//       .hero-text-container {
-//         @include m.flex(column, center, flex-start);
-
-//         .text-cont {
-//           padding: 2rem 0 1rem 0;
-//           width: 100%;
-//           span {
-//             font-size: 2rem;
-//             font-weight: 700;
-//             color: v.$secondaryTextColor;
-//             color: black;
-//           }
-//         }
-
-//         .title {
-//           padding: 0;
-//         }
-//       }
-//     }
-//   }
-// }
 
 @media (min-width: 767px) {
   .hero-container {
@@ -92,9 +52,8 @@
       grid-area: b;
       width: 50%;
 
-      .img {
-        width: 15rem;
-        height: auto;
+      img {
+        height: 15rem;
       }
     }
 
@@ -119,8 +78,17 @@
         }
 
         .text {
-                              font-size: 1.125rem;
-                          }
+          font-size: 1.125rem;
+        }
+      }
+    }
+
+    .contact-icons {
+      a {
+        img {
+          width: 3rem;
+          height: 3rem;
+        }
       }
     }
   }
@@ -132,8 +100,7 @@
     .upper {
       width: 30%;
 
-      .img {
-        width: 20rem;
+      img {
         height: 20rem;
       }
     }
@@ -160,17 +127,18 @@
 
         .text {
           font-size: 1.5rem;
-          width: 80%;
+          width: 70%;
         }
       }
     }
 
     .contact-icons {
       a {
-        margin: 2rem 2rem 0 0;
+        // margin: 2rem 2rem 0 0;
+        margin-right: 2rem;
 
         img {
-          width: 100%;
+          width: 3rem;
           height: 3rem;
         }
       }
@@ -181,9 +149,8 @@
 @media (min-width: 1440px) {
   .hero-container {
     .upper {
-      .img {
+      img {
         height: 26.5rem;
-        width: 26.5rem;
       }
     }
 
@@ -196,7 +163,7 @@
         width: 100%;
 
         .text-cont {
-          width: 80%;
+          width: 60%;
           padding: 0;
 
           span {
