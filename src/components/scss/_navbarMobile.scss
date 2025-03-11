@@ -8,13 +8,14 @@ header {
         position: relative;
         .nav-text-container {
             .name {
-                font-size: 1.125rem;
+                font-size: 1.5rem;
                 font-weight: 600;
             }
 
             .job-title {
                 color: v.$secondaryTextColor;
                 font-size: 0.75rem;
+                font-weight: 500;
             }
         }
     

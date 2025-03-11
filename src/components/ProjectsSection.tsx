@@ -11,8 +11,9 @@ const Projects = () => {
       <section id="projects">
         <UpperWrapper>
           <SectionHeader
-            title="Projects I’ve Built "
-            subheader="I try to explore different industries, solving real problems, and building meaningful solutions."
+            title="Selected work"
+            biggerSubheader="And projects."
+            // subheader="See my selected projects where i put my knowledge and edge in to different industries"
           />
         </UpperWrapper>
         <LowerWrapper>

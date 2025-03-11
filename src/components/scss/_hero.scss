@@ -14,15 +14,19 @@
   .lower {
     .hero-text-container {
       .text-cont {
-        padding: 2rem 0 1rem 0;
-        width: 90%;
+        padding: 1rem 0 1rem 0;
+        width: 100%;
 
         span {
-          font-size: 2rem;
+          font-size: 2.25rem;
           font-weight: 700;
           color: v.$secondaryTextColor;
           color: black;
         }
+      }
+
+      .text {
+        font-size: 1.125rem;
       }
     }
   }
@@ -47,7 +51,7 @@
     .lower {
       .hero-text-container {
         .text-cont {
-          width: 70%;
+          width: 90%;
         }
       }
     }
