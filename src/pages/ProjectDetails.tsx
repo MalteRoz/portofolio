@@ -44,7 +44,10 @@ const ProjectDetails = () => {
                 <div className="line"></div>
                 <div className="web-links">
                   <p>Links:</p>
-                  <a href={projectData?.links?.[0]}>
+                  <a
+                    href={projectData?.links?.[0]}
+                    className="project-page-link"
+                  >
                     {projectData?.links?.[0]}
                   </a>
                 </div>

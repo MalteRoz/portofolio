@@ -57,6 +57,12 @@
         .web-links {
           @include m.flex(column, center, flex-start);
           gap: 1rem;
+
+          .project-page-link {
+            display: flex;
+            flex-wrap: wrap;
+            word-break: break-all;
+          }
         }
       }
 
