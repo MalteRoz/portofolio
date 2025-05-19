@@ -4,7 +4,7 @@
 footer {
     @include m.flex(column, center, center);
     width: 100%;
-    gap: 2rem;
+    gap: 2.5rem;
 
     .footer-upper {
         @include m.flex(row, space-between, center);
@@ -29,7 +29,7 @@ footer {
     .footer-middle {
         @include m.flex(column, center, flex-start);
         width: 100%;
-        gap: 1rem;
+        gap: 1.25rem;
 
         .connect-box {
             @include m.flex(row, center, center);
